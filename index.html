@@ -1,0 +1,2621 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mật Mía Nghệ An — Tạo niềm tin - Bán chất lượng - Tạo trải nghiệm</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/02XwQG2G/A-nh-ma-n-hi-nh-2026-11-05-lu-c-00-32-50.png">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/02XwQG2G/A-nh-ma-n-hi-nh-2026-11-05-lu-c-00-32-50.png">
+    <!-- Phông chữ Sans-serif thương mại điện tử sắc nét, dễ đọc: Be Vietnam Pro & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Be Vietnam Pro"', '"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+                            display: ['"Be Vietnam Pro"', '"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+                        },
+                        colors: {
+                            cane: {
+                                50: '#f2fbf5',
+                                100: '#e1f6e8',
+                                200: '#c3ecd2',
+                                300: '#94dcb0',
+                                400: '#5cc386',
+                                500: '#35a764',
+                                600: '#26884e',
+                                700: '#206c40',
+                                800: '#1c5635',
+                                900: '#17472d',
+                                950: '#0d2b1b',
+                            },
+                            molasses: {
+                                50: '#fdf9f0',
+                                100: '#f9efd8',
+                                200: '#f2dbb0',
+                                300: '#e9c17e',
+                                400: '#dfa04b',
+                                500: '#d68528',
+                                600: '#be691e',
+                                700: '#9e4f1b',
+                                800: '#813f1c',
+                                900: '#6a351a',
+                            }
+                        }
+                    }
+                }
+            };
+        }
+    </script>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Be Vietnam Pro', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #ffffff;
+            color: #1e293b;
+            line-height: 1.55;
+            letter-spacing: -0.01em;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Be Vietnam Pro', 'Inter', sans-serif;
+            letter-spacing: -0.02em;
+            text-wrap: balance;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        button {
+            cursor: pointer;
+            font-family: inherit;
+            touch-action: manipulation;
+        }
+        /* Cỡ chữ 16px chuẩn trên mọi ô input/textarea để iOS/Android không tự zoom khi nhập */
+        input, textarea, select {
+            font-family: 'Be Vietnam Pro', 'Inter', sans-serif;
+            font-size: 16px !important;
+            line-height: 1.45 !important;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        /* Infinite Marquee Top Bar */
+        @keyframes marqueeScroll {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-track {
+            display: flex;
+            width: max-content;
+            animation: marqueeScroll 30s linear infinite;
+        }
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        /* Continuous Horizontal Auto-Scrolling Marquee for Culinary Applications */
+        @keyframes culinaryMarqueeScroll {
+            0% { transform: translate3d(0%, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+        .culinary-marquee-track {
+            display: flex;
+            width: max-content;
+            animation: culinaryMarqueeScroll 26s linear infinite;
+            will-change: transform;
+        }
+        .culinary-marquee-track:hover,
+        .culinary-marquee-track:active {
+            animation-play-state: paused;
+        }
+        .culinary-marquee-mask {
+            mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+        }
+
+        /* Gentle Wiggle Animations for Circular Zalo & Cart Trolley Icons */
+        @keyframes gentleWiggle {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            15% { transform: rotate(-10deg) scale(1.06); }
+            30% { transform: rotate(10deg) scale(1.06); }
+            45% { transform: rotate(-6deg) scale(1.03); }
+            60% { transform: rotate(6deg) scale(1.03); }
+            75% { transform: rotate(0deg) scale(1); }
+        }
+        .wiggle-zalo {
+            animation: gentleWiggle 2.8s ease-in-out infinite;
+        }
+        .wiggle-cart {
+            animation: gentleWiggle 2.8s ease-in-out 1.4s infinite;
+        }
+
+        /* Pulse Ring for Circular Zalo */
+        @keyframes zaloRing {
+            0% { box-shadow: 0 0 0 0 rgba(0, 104, 255, 0.45); }
+            70% { box-shadow: 0 0 0 9px rgba(0, 104, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 104, 255, 0); }
+        }
+        .zalo-circle-pulse {
+            animation: zaloRing 2.2s infinite;
+        }
+
+        /* Màu nền phẳng hiện đại, sang trọng */
+        .bg-sugarcane-dark {
+            background-color: #143d26;
+        }
+        .bg-sugarcane-light {
+            background-color: #f4faf6;
+        }
+        .btn-sugarcane {
+            background-color: #143d26;
+            transition: background-color 0.2s ease, transform 0.15s ease;
+        }
+        .btn-sugarcane:hover {
+            background-color: #206c40;
+        }
+
+        /* Hiệu ứng nhảy số mượt mà khi tăng/giảm số Lít */
+        @keyframes numberPop {
+            0% { transform: scale(1); }
+            40% { transform: scale(1.06); }
+            100% { transform: scale(1); }
+        }
+        .number-pop-anim {
+            animation: numberPop 0.24s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        /* Ẩn thanh cuộn ngang trên dãy thumbnail điện thoại nhưng vẫn vuốt mượt */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-[#eef5f0] text-slate-800 font-sans antialiased selection:bg-cane-800 selection:text-amber-300 overflow-x-hidden">
+
+    <!-- KHUNG MOBILE-FIRST CHUẨN SMARTPHONE (Full 100% trên điện thoại, căn giữa 480px sang trọng trên màn hình lớn) -->
+    <div id="app-shell" class="w-full max-w-[480px] mx-auto min-h-screen bg-white sm:shadow-2xl sm:border-x sm:border-cane-900/10 pb-24 relative overflow-x-hidden">
+
+        <!-- 1. INFINITE MARQUEE ANNOUNCEMENT BAR -->
+        <div class="bg-sugarcane-dark text-white overflow-hidden py-2 border-b border-cane-800 text-[11px] font-semibold tracking-wide uppercase">
+            <div class="marquee-track">
+                <div class="flex items-center gap-5 px-3 whitespace-nowrap">
+                    <span>Thanh toán khi nhận hàng (COD)</span>
+                    <span class="text-molasses-400">•</span>
+                    <span>Chuẩn mật đặc 1 Lít = 1,44kg</span>
+                    <span class="text-molasses-400">•</span>
+                    <span class="text-amber-300 font-bold">Miễn phí ship toàn quốc từ 3 Lít (135.000đ)</span>
+                    <span class="text-molasses-400">•</span>
+                    <span>Cam kết nguyên chất 100% nấu chảo gang xứ Nghệ</span>
+                    <span class="text-molasses-400">•</span>
+                    <span>Hotline / Zalo: 0375.013.878</span>
+                    <span class="text-molasses-400">•</span>
+                </div>
+                <div class="flex items-center gap-5 px-3 whitespace-nowrap" aria-hidden="true">
+                    <span>Thanh toán khi nhận hàng (COD)</span>
+                    <span class="text-molasses-400">•</span>
+                    <span>Chuẩn mật đặc 1 Lít = 1,44kg</span>
+                    <span class="text-molasses-400">•</span>
+                    <span class="text-amber-300 font-bold">Miễn phí ship toàn quốc từ 3 Lít (135.000đ)</span>
+                    <span class="text-molasses-400">•</span>
+                    <span>Cam kết nguyên chất 100% nấu chảo gang xứ Nghệ</span>
+                    <span class="text-molasses-400">•</span>
+                    <span>Hotline / Zalo: 0375.013.878</span>
+                    <span class="text-molasses-400">•</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. STICKY HEADER ĐỐI XỨNG CHUẨN ĐIỆN THOẠI -->
+        <header class="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-2xs">
+            <div class="px-3.5 py-2.5 flex items-center justify-between gap-2">
+                <!-- Bên trái: Logo HM, Tên thương hiệu & Slogan -->
+                <a href="#" class="flex items-center gap-2.5 min-w-0 flex-1">
+                    <img src="https://i.postimg.cc/02XwQG2G/A-nh-ma-n-hi-nh-2026-11-05-lu-c-00-32-50.png"
+                         alt="Logo Mật Mía Nghệ An"
+                         class="w-10 h-10 rounded-full object-cover border border-emerald-900/15 shadow-xs bg-white shrink-0" />
+                    <div class="min-w-0 flex-1">
+                        <div class="font-extrabold text-[15px] text-cane-950 leading-tight tracking-tight whitespace-nowrap">
+                            Mật Mía Nghệ An
+                        </div>
+                        <div class="text-[10.5px] font-semibold text-molasses-600 leading-tight truncate mt-0.5">
+                            Tạo niềm tin - Bán chất lượng - Tạo trải nghiệm
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Bên phải: Nút Zalo hình tròn lắc nhẹ + Nút Giỏ hàng tròn có số Lít -->
+                <div class="flex items-center gap-2 shrink-0">
+                    <!-- Circular Zalo Icon Button -->
+                    <a href="https://zalo.me/0375013878" target="_blank" rel="noopener noreferrer"
+                       title="Nhắn Zalo 0375.013.878"
+                       aria-label="Nhắn Zalo 0375.013.878"
+                       class="wiggle-zalo zalo-circle-pulse relative w-10 h-10 rounded-full bg-[#0068FF] active:scale-95 text-white flex items-center justify-center shadow-xs border-2 border-white transition-transform">
+                        <svg viewBox="0 0 48 48" class="w-5 h-5 fill-current">
+                            <path d="M24 4C12.95 4 4 12.15 4 22.2c0 5.65 2.84 10.7 7.3 14.05-.35 2.15-1.35 5.1-1.5 5.45-.2.45.15.85.6.7.45-.15 4.55-2.05 6.65-3.15 2.2.6 4.52.95 6.95.95 11.05 0 20-8.15 20-18S35.05 4 24 4z" fill="#ffffff"/>
+                            <text x="24" y="26.5" text-anchor="middle" fill="#0068FF" font-size="11.5" font-weight="800" font-family="Be Vietnam Pro, Inter, sans-serif">Zalo</text>
+                        </svg>
+                        <span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-white"></span>
+                    </a>
+
+                    <!-- Nút Giỏ Hàng Hình Tròn Có Badge Số Lít -->
+                    <button type="button" onclick="openCartDrawer()"
+                            title="Giỏ hàng"
+                            aria-label="Giỏ hàng"
+                            class="wiggle-cart relative w-10 h-10 rounded-full flex items-center justify-center bg-[#143d27] text-[#facc15] active:scale-95 transition shadow-xs border-2 border-cane-700">
+                        <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span id="header-cart-badge" class="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-amber-400 text-slate-950 font-extrabold text-[10px] flex items-center justify-center border border-white shadow-2xs">
+                            3L
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Thanh điều hướng nhanh 4 mục gọn gàng trên 1 hàng điện thoại -->
+            <nav class="grid grid-cols-4 border-t border-slate-100 bg-sugarcane-light/70 text-[11px] font-bold text-cane-900 text-center">
+                <a href="#details-section" class="py-2 hover:bg-cane-100/60 active:bg-cane-100 transition truncate px-1">1L = 1,44Kg</a>
+                <a href="#order-section" class="py-2 hover:bg-cane-100/60 active:bg-cane-100 transition truncate px-1 text-red-600 font-extrabold">Đặt Hàng</a>
+                <a href="#culinary-section" class="py-2 hover:bg-cane-100/60 active:bg-cane-100 transition truncate px-1">Ứng Dụng</a>
+                <a href="#reviews-section" class="py-2 hover:bg-cane-100/60 active:bg-cane-100 transition truncate px-1">Đánh Giá ★</a>
+            </nav>
+        </header>
+
+        <!-- =========================================================================
+             3. HERO PRODUCT SHOWCASE & BUY BOX (#buy-box) — TỐI ƯU CẦM ĐIỆN THOẠI XEM
+             ========================================================================= -->
+        <section id="buy-box" class="pt-3 pb-6 px-3.5 bg-white border-b border-slate-100">
+            <div class="space-y-4">
+
+                <!-- Băng Chuyền 9 Hình Ảnh Thực Tế Tự Động Chạy Ngang (Auto-Slide 3 giây/ảnh) -->
+                <div class="space-y-2.5">
+                    <div id="hero-auto-carousel"
+                         class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden border-2 border-cane-800/15 shadow-md bg-cane-950 select-none"
+                         onmouseenter="pauseHeroAutoSlide()"
+                         onmouseleave="resumeHeroAutoSlide()"
+                         ontouchstart="handleHeroTouchStart(event)"
+                         ontouchend="handleHeroTouchEnd(event)">
+
+                        <!-- Nhãn nổi góc trên -->
+                        <div class="absolute top-3 left-3 right-3 z-20 flex items-center justify-between gap-1.5 pointer-events-none">
+                            <div class="flex items-center gap-1.5">
+                                <span class="bg-sugarcane-dark/90 backdrop-blur-xs text-amber-300 text-[11px] font-extrabold px-2.5 py-1 rounded-full border border-amber-400/40 shadow-xs whitespace-nowrap">
+                                    ★ Chuẩn 1 Lít = 1,44kg
+                                </span>
+                                <span class="bg-white/95 backdrop-blur-xs text-cane-950 text-[10.5px] font-extrabold px-2.5 py-1 rounded-full shadow-xs whitespace-nowrap">
+                                    Mật Mới Ra Lò
+                                </span>
+                            </div>
+                            <span id="hero-slide-counter" class="bg-slate-950/80 backdrop-blur-xs text-amber-300 text-[11px] font-extrabold px-2.5 py-1 rounded-full border border-white/15 whitespace-nowrap">
+                                1 / 9
+                            </span>
+                        </div>
+
+                        <!-- Track trượt ngang tự động chứa 9 bức ảnh thực tế -->
+                        <div id="hero-carousel-track" class="w-full h-full flex transition-transform duration-500 ease-out">
+                            <!-- Render tự động bằng JS -->
+                        </div>
+
+                        <!-- Nút điều hướng Trái / Phải chuẩn ngón tay cái -->
+                        <button type="button" onclick="stepHeroCarousel(-1)" aria-label="Ảnh trước"
+                                class="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-slate-950/60 hover:bg-slate-950/85 text-white font-extrabold flex items-center justify-center border border-white/25 shadow-md transition active:scale-90">
+                            ←
+                        </button>
+                        <button type="button" onclick="stepHeroCarousel(1)" aria-label="Ảnh tiếp theo"
+                                class="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-slate-950/60 hover:bg-slate-950/85 text-white font-extrabold flex items-center justify-center border border-white/25 shadow-md transition active:scale-90">
+                            →
+                        </button>
+
+                        <!-- Chú thích & Dấu chấm chuyển ảnh dưới đáy -->
+                        <div class="absolute bottom-2.5 inset-x-2.5 z-20 bg-slate-950/80 backdrop-blur-xs text-white px-3 py-2 rounded-2xl flex items-center justify-between gap-2 text-[11px] border border-white/15">
+                            <span id="hero-slide-caption" class="font-semibold text-amber-300 truncate">
+                                Hình ảnh thực tế Mật Mía Nghệ An tại lò (1/9)
+                            </span>
+                            <div id="hero-carousel-dots" class="flex items-center gap-1 shrink-0"></div>
+                        </div>
+                    </div>
+
+                    <!-- Dãy 9 ảnh thu nhỏ (Thumbnails) bên dưới tự động sáng và cuộn mượt theo ảnh đang chạy -->
+                    <div id="hero-carousel-thumbs" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-0.5 scroll-smooth">
+                        <!-- Render tự động bằng JS -->
+                    </div>
+                </div>
+
+                <!-- Thông Tin Sản Phẩm, Giá & Cam Kết 2x2 Gọn Đẹp Trên Điện Thoại -->
+                <div class="space-y-3.5 pt-1">
+                    <div class="space-y-1.5">
+                        <div class="flex flex-wrap items-center gap-1.5">
+                            <span class="inline-flex items-center gap-1 bg-sugarcane-light text-cane-800 border border-cane-200 text-[11px] font-extrabold px-2.5 py-0.5 rounded-full">
+                                ★ 4,9/5 (1.280+ đánh giá)
+                            </span>
+                            <span class="inline-flex items-center gap-1 bg-amber-100 text-amber-900 text-[11px] font-extrabold px-2.5 py-0.5 rounded-full">
+                                Đặc sánh 1 Lít = 1,44kg
+                            </span>
+                        </div>
+
+                        <h1 class="text-[20px] leading-[1.3] font-extrabold text-cane-950 tracking-tight">
+                            Mật Mía Nghệ An Nguyên Chất — Nấu Chảo Gang Củi Bã Mía Sánh Đặc Kéo Sợi
+                        </h1>
+                        <p class="text-[13px] text-slate-600 leading-relaxed">
+                            Mật mía quê nguyên chất 100% ép từ mía tươi xứ Nghệ, cô đặc già lửa nên <strong class="text-cane-950">1 Lít nặng chuẩn 1,44kg</strong>, thơm lừng vị mật quê truyền thống.
+                        </p>
+                    </div>
+
+                    <!-- Khung Giá Tại Lò Nổi Bật -->
+                    <div class="bg-sugarcane-light rounded-2xl p-3.5 border-2 border-cane-700/25 flex items-center justify-between gap-2">
+                        <div>
+                            <div class="text-[11px] font-bold text-cane-800 uppercase tracking-wider">Giá gốc tại lò xứ Nghệ</div>
+                            <div class="flex items-baseline gap-1.5 mt-0.5">
+                                <span class="text-2xl font-extrabold text-red-600 tracking-tight">45.000đ</span>
+                                <span class="text-xs font-extrabold text-cane-950">/ 1 Lít (1,44kg)</span>
+                            </div>
+                        </div>
+                        <span class="text-[11px] font-extrabold text-slate-950 bg-amber-400 px-3 py-1.5 rounded-xl shadow-2xs whitespace-nowrap">
+                            🚚 Freeship từ 3 Lít
+                        </span>
+                    </div>
+
+                    <!-- 4 Ô Cam Kết Vàng Xếp Lưới 2x2 Vừa Khít Màn Hình Điện Thoại -->
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-2.5 flex items-center gap-2">
+                            <span class="w-7 h-7 rounded-lg bg-cane-800 text-amber-300 font-extrabold text-xs flex items-center justify-center shrink-0">⚖️</span>
+                            <div class="min-w-0">
+                                <div class="font-extrabold text-[11.5px] text-cane-950 truncate">Đủ 1 Lít = 1,44Kg</div>
+                                <div class="text-[10.5px] text-slate-500 truncate">Sánh đặc già lửa</div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-2.5 flex items-center gap-2">
+                            <span class="w-7 h-7 rounded-lg bg-cane-800 text-amber-300 font-extrabold text-xs flex items-center justify-center shrink-0">🔥</span>
+                            <div class="min-w-0">
+                                <div class="font-extrabold text-[11.5px] text-cane-950 truncate">Nấu Chảo Gang</div>
+                                <div class="text-[10.5px] text-slate-500 truncate">Củi bã mía thơm lừng</div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-2.5 flex items-center gap-2">
+                            <span class="w-7 h-7 rounded-lg bg-cane-800 text-amber-300 font-extrabold text-xs flex items-center justify-center shrink-0">🌿</span>
+                            <div class="min-w-0">
+                                <div class="font-extrabold text-[11.5px] text-cane-950 truncate">100% Tự Nhiên</div>
+                                <div class="text-[10.5px] text-slate-500 truncate">Không chất bảo quản</div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-2.5 flex items-center gap-2">
+                            <span class="w-7 h-7 rounded-lg bg-cane-800 text-amber-300 font-extrabold text-xs flex items-center justify-center shrink-0">📦</span>
+                            <div class="min-w-0">
+                                <div class="font-extrabold text-[11.5px] text-cane-950 truncate">Kiểm Hàng COD</div>
+                                <div class="text-[10.5px] text-slate-500 truncate">Ưng ý mới thanh toán</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chọn Gói Ưu Đãi Nhanh -->
+                    <div class="space-y-2 pt-1">
+                        <div class="flex items-center justify-between">
+                            <label class="font-extrabold text-xs uppercase tracking-wider text-cane-950">
+                                Chọn nhanh gói ưu đãi:
+                            </label>
+                            <span class="text-[11px] font-semibold text-emerald-700">✓ Kiểm tra hàng thoải mái</span>
+                        </div>
+
+                        <!-- Gói 1 Lít -->
+                        <div id="tier-card-1" onclick="selectBundleTier(1)"
+                             class="cursor-pointer rounded-2xl border-2 border-slate-200 bg-white p-3 transition-all active:scale-[0.99] flex items-center justify-between gap-2.5">
+                            <div class="flex items-center gap-2.5 min-w-0">
+                                <div id="tier-radio-1" class="w-5 h-5 rounded-full border-2 border-slate-400 flex items-center justify-center shrink-0">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-cane-800 hidden"></div>
+                                </div>
+                                <div class="min-w-0">
+                                    <div class="font-extrabold text-[13.5px] text-cane-950">Dùng Thử 1 Lít (~1,44 kg)</div>
+                                    <div class="text-[11px] text-slate-500">Phí ship đồng giá 25.000đ</div>
+                                </div>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <div class="font-extrabold text-sm text-cane-950">45.000đ</div>
+                                <div class="text-[10.5px] text-slate-500">+ 25k ship</div>
+                            </div>
+                        </div>
+
+                        <!-- Gói 2 Lít -->
+                        <div id="tier-card-2" onclick="selectBundleTier(2)"
+                             class="cursor-pointer rounded-2xl border-2 border-slate-200 bg-white p-3 transition-all active:scale-[0.99] flex items-center justify-between gap-2.5">
+                            <div class="flex items-center gap-2.5 min-w-0">
+                                <div id="tier-radio-2" class="w-5 h-5 rounded-full border-2 border-slate-400 flex items-center justify-center shrink-0">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-cane-800 hidden"></div>
+                                </div>
+                                <div class="min-w-0">
+                                    <div class="font-extrabold text-[13.5px] text-cane-950">Gói Gia Đình 2 Lít (~2,88 kg)</div>
+                                    <div class="text-[11px] text-slate-500">Phí ship đồng giá 25.000đ</div>
+                                </div>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <div class="font-extrabold text-sm text-cane-950">90.000đ</div>
+                                <div class="text-[10.5px] text-slate-500">+ 25k ship</div>
+                            </div>
+                        </div>
+
+                        <!-- Gói 3 Lít (Bán chạy nhất - Freeship) -->
+                        <div id="tier-card-3" onclick="selectBundleTier(3)"
+                             class="cursor-pointer rounded-2xl border-2 border-cane-800 bg-sugarcane-light p-3 transition-all active:scale-[0.99] flex items-center justify-between gap-2.5 relative">
+                            <div class="flex items-center gap-2.5 min-w-0">
+                                <div id="tier-radio-3" class="w-5 h-5 rounded-full border-2 border-cane-800 flex items-center justify-center shrink-0">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-cane-800"></div>
+                                </div>
+                                <div class="min-w-0">
+                                    <div class="flex flex-wrap items-center gap-1">
+                                        <span class="font-extrabold text-[13.5px] text-cane-950">Combo 3 Lít (~4,32 kg)</span>
+                                        <span class="bg-amber-400 text-slate-950 text-[9.5px] font-extrabold px-2 py-0.5 rounded-full uppercase">Bán chạy</span>
+                                    </div>
+                                    <div class="text-[11px] font-bold text-emerald-700 mt-0.5">✓ MIỄN PHÍ SHIP toàn quốc</div>
+                                </div>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <div class="font-extrabold text-[15px] text-red-600">135.000đ</div>
+                                <div class="text-[10.5px] font-extrabold text-emerald-700">Freeship 0đ</div>
+                            </div>
+                        </div>
+
+                        <!-- Gói Mua Nhiều / Biếu Tặng (4 Lít trở lên) -->
+                        <div id="tier-card-bulk" onclick="selectBundleTier(customBulkLiters)"
+                             class="cursor-pointer rounded-2xl border-2 border-slate-200 bg-white p-3 transition-all active:scale-[0.99] flex items-center justify-between gap-2">
+                            <div class="flex items-center gap-2.5 min-w-0">
+                                <div id="tier-radio-bulk" class="w-5 h-5 rounded-full border-2 border-slate-400 flex items-center justify-center shrink-0">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-cane-800 hidden"></div>
+                                </div>
+                                <div class="min-w-0">
+                                    <div class="font-extrabold text-[13px] text-cane-950">
+                                        Mua Nhiều: <span id="bulk-liter-count" class="text-cane-800">4 Lít</span> (~<span id="bulk-weight-label">5,76 kg</span>)
+                                    </div>
+                                    <div class="text-[11px] font-bold text-emerald-700">✓ Freeship • Chỉnh số Lít</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-1.5 shrink-0" onclick="event.stopPropagation()">
+                                <button type="button" onclick="selectBundleTier(Math.max(4, customBulkLiters - 1))"
+                                        class="w-7 h-7 rounded-lg bg-slate-100 active:bg-slate-200 font-extrabold text-sm flex items-center justify-center">−</button>
+                                <button type="button" onclick="selectBundleTier(customBulkLiters + 1)"
+                                        class="w-7 h-7 rounded-lg bg-cane-800 text-white font-extrabold text-sm flex items-center justify-center">+</button>
+                                <div class="text-right min-w-[64px]">
+                                    <div id="bulk-price-label" class="font-extrabold text-xs text-cane-950">180.000đ</div>
+                                    <div class="text-[10px] font-bold text-emerald-700">Freeship</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nút Cuộn Xuống Chốt Đơn Nhanh -->
+                    <div class="pt-1">
+                        <button type="button" onclick="scrollToOrderSection()"
+                                class="w-full min-h-[54px] py-3 px-4 rounded-2xl btn-sugarcane active:scale-[0.98] text-white font-extrabold text-sm shadow-md flex flex-col items-center justify-center gap-0.5">
+                            <span class="uppercase tracking-wide text-amber-300">ĐẶT MUA NGAY — NHẬN HÀNG MỚI TRẢ TIỀN</span>
+                            <span id="cta-total-label" class="text-[11.5px] font-semibold text-slate-100">3 Lít (~4,32 kg) — 135.000đ (Miễn Phí Ship)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             4. SECTION "ỨNG DỤNG TUYỆT VỜI CỦA MẬT MÍA NGHỆ AN" (#culinary-section)
+             Chạy auto ngang liên tục không dừng (Infinite Horizontal Auto-Scroll)
+             ========================================================================= -->
+        <section id="culinary-section" class="py-7 px-3.5 bg-sugarcane-light border-b border-cane-200/80 overflow-hidden">
+            <div class="text-center mb-4">
+                <span class="inline-block bg-white text-cane-800 border border-cane-200 text-[10.5px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+                    GIA VỊ VÀNG CHO MỌI GIAN BẾP VIỆT
+                </span>
+                <h2 class="text-[19px] font-extrabold text-cane-950 mt-2 tracking-tight">
+                    Ứng Dụng Tuyệt Vời Của Mật Mía Nghệ An
+                </h2>
+                <p class="text-xs text-slate-600 mt-0.5">
+                    Băng chuyền tự động chạy ngang • Chạm vào ảnh để xem rõ
+                </p>
+            </div>
+
+            <!-- Băng chuyền chạy auto ngang liên tục không dừng -->
+            <div class="relative overflow-hidden culinary-marquee-mask py-1 -mx-3.5">
+                <div class="culinary-marquee-track pl-3.5">
+                    <!-- Tập thẻ 1 -->
+                    <div class="flex items-stretch gap-3 pr-3">
+                        <!-- Thẻ 1: Kho Cá, Kho Thịt -->
+                        <div class="w-[235px] shrink-0 rounded-2xl border border-cane-200 p-3 bg-white shadow-2xs flex flex-col justify-between">
+                            <div>
+                                <div onclick="openReviewPhotoModal('https://i.postimg.cc/0jCdZfKq/image.png', '1. Kho Cá, Kho Thịt Lên Màu Cánh Gián')"
+                                     class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-cane-950 mb-2.5 border border-slate-200/80 flex items-center justify-center cursor-zoom-in">
+                                    <img src="https://i.postimg.cc/0jCdZfKq/image.png"
+                                         alt=""
+                                         aria-hidden="true"
+                                         class="culinary-card-bg-1 absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                                    <img src="https://i.postimg.cc/0jCdZfKq/image.png"
+                                         alt="1. Kho Cá, Kho Thịt Lên Màu Cánh Gián"
+                                         class="culinary-card-img-1 relative z-10 w-full h-full object-contain p-1" />
+                                </div>
+                                <div class="font-extrabold text-[13.5px] text-cane-950 leading-snug mb-1">1. Kho Cá, Kho Thịt Lên Màu Cánh Gián</div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Giúp nồi cá kho, thịt kho tàu bóng đẹp màu hổ phách, vị ngọt hậu đậm đà và khử sạch mùi tanh.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Thẻ 2: Chấm Bánh Chưng, Bánh Gio, Xôi Nếp -->
+                        <div class="w-[235px] shrink-0 rounded-2xl border border-cane-200 p-3 bg-white shadow-2xs flex flex-col justify-between">
+                            <div>
+                                <div onclick="openReviewPhotoModal('https://i.postimg.cc/FzPk7nJY/image.png', '2. Chấm Bánh Chưng, Bánh Gio, Xôi Nếp')"
+                                     class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-cane-950 mb-2.5 border border-slate-200/80 flex items-center justify-center cursor-zoom-in">
+                                    <img src="https://i.postimg.cc/FzPk7nJY/image.png"
+                                         alt=""
+                                         aria-hidden="true"
+                                         class="culinary-card-bg-2 absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                                    <img src="https://i.postimg.cc/FzPk7nJY/image.png"
+                                         alt="2. Chấm Bánh Chưng, Bánh Gio, Xôi Nếp"
+                                         class="culinary-card-img-2 relative z-10 w-full h-full object-contain p-1" />
+                                </div>
+                                <div class="font-extrabold text-[13.5px] text-cane-950 leading-snug mb-1">2. Chấm Bánh Chưng, Bánh Gio, Xôi Nếp</div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Rót mật mía sánh đặc chấm trực tiếp với bánh chưng, bánh gio, bánh gai hoặc xôi trắng dẻo thơm ngon.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Thẻ 3: Nấu Bánh Ngào, Chè Đậu Xanh, Chè Khoai -->
+                        <div class="w-[235px] shrink-0 rounded-2xl border border-cane-200 p-3 bg-white shadow-2xs flex flex-col justify-between">
+                            <div>
+                                <div onclick="openReviewPhotoModal('https://i.postimg.cc/YqYhc9dK/image.png', '3. Nấu Bánh Ngào, Chè Đậu Xanh, Chè Khoai')"
+                                     class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-cane-950 mb-2.5 border border-slate-200/80 flex items-center justify-center cursor-zoom-in">
+                                    <img src="https://i.postimg.cc/YqYhc9dK/image.png"
+                                         alt=""
+                                         aria-hidden="true"
+                                         class="culinary-card-bg-3 absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                                    <img src="https://i.postimg.cc/YqYhc9dK/image.png"
+                                         alt="3. Nấu Bánh Ngào, Chè Đậu Xanh, Chè Khoai"
+                                         class="culinary-card-img-3 relative z-10 w-full h-full object-contain p-1" />
+                                </div>
+                                <div class="font-extrabold text-[13.5px] text-cane-950 leading-snug mb-1">3. Nấu Bánh Ngào, Chè Đậu Xanh, Chè Khoai</div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Làm bánh ngào mật gừng xứ Nghệ, nấu chè trôi nước, chè sắn nóng hổi hay pha trà gừng mật mía ấm bụng.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Thẻ 4: Ướp Thịt Nướng, Pha Nước Chấm, Đồ Uống -->
+                        <div class="w-[235px] shrink-0 rounded-2xl border border-cane-200 p-3 bg-white shadow-2xs flex flex-col justify-between">
+                            <div>
+                                <div onclick="openReviewPhotoModal('https://i.postimg.cc/KzCvwSL3/image.png', '4. Ướp Thịt Nướng, Pha Nước Chấm, Đồ Uống')"
+                                     class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-cane-950 mb-2.5 border border-slate-200/80 flex items-center justify-center cursor-zoom-in">
+                                    <img src="https://i.postimg.cc/KzCvwSL3/image.png"
+                                         alt=""
+                                         aria-hidden="true"
+                                         class="culinary-card-bg-4 absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                                    <img src="https://i.postimg.cc/KzCvwSL3/image.png"
+                                         alt="4. Ướp Thịt Nướng, Pha Nước Chấm, Đồ Uống"
+                                         class="culinary-card-img-4 relative z-10 w-full h-full object-contain p-1" />
+                                </div>
+                                <div class="font-extrabold text-[13.5px] text-cane-950 leading-snug mb-1">4. Ướp Thịt Nướng, Pha Nước Chấm, Đồ Uống</div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Giúp món nướng lên màu vàng óng tự nhiên, thịt mềm thơm không bị cháy khét như dùng đường cát.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tập thẻ 2 (Nhân bản nối tiếp để trượt vòng lặp vô tận không bao giờ bị khựng) -->
+                    <div class="flex items-stretch gap-3 pr-3" aria-hidden="true">
+                        <div class="w-[235px] shrink-0 rounded-2xl border border-cane-200 p-3 bg-white shadow-2xs flex flex-col justify-between">
+                            <div>
+                                <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-cane-950 mb-2.5 border border-slate-200/80 flex items-center justify-center">
+                                    <img src="https://i.postimg.cc/0jCdZfKq/image.png" alt="" aria-hidden="true" class="culinary-card-bg-1 absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                                    <img src="https://i.postimg.cc/0jCdZfKq/image.png" alt="1. Kho Cá, Kho Thịt Lên Màu Cánh Gián" class="culinary-card-img-1 relative z-10 w-full h-full object-contain p-1" />
+                                </div>
+                                <div class="font-extrabold text-[13.5px] text-cane-950 leading-snug mb-1">1. Kho Cá, Kho Thịt Lên Màu Cánh Gián</div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Giúp nồi cá kho, thịt kho tàu bóng đẹp màu hổ phách, vị ngọt hậu đậm đà và khử sạch mùi tanh.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="w-[235px] shrink-0 rounded-2xl border border-cane-200 p-3 bg-white shadow-2xs flex flex-col justify-between">
+                            <div>
+                                <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-cane-950 mb-2.5 border border-slate-200/80 flex items-center justify-center">
+                                    <img src="https://i.postimg.cc/FzPk7nJY/image.png" alt="" aria-hidden="true" class="culinary-card-bg-2 absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                                    <img src="https://i.postimg.cc/FzPk7nJY/image.png" alt="2. Chấm Bánh Chưng, Bánh Gio, Xôi Nếp" class="culinary-card-img-2 relative z-10 w-full h-full object-contain p-1" />
+                                </div>
+                                <div class="font-extrabold text-[13.5px] text-cane-950 leading-snug mb-1">2. Chấm Bánh Chưng, Bánh Gio, Xôi Nếp</div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Rót mật mía sánh đặc chấm trực tiếp với bánh chưng, bánh gio, bánh gai hoặc xôi trắng dẻo thơm ngon.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="w-[235px] shrink-0 rounded-2xl border border-cane-200 p-3 bg-white shadow-2xs flex flex-col justify-between">
+                            <div>
+                                <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-cane-950 mb-2.5 border border-slate-200/80 flex items-center justify-center">
+                                    <img src="https://i.postimg.cc/YqYhc9dK/image.png" alt="" aria-hidden="true" class="culinary-card-bg-3 absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                                    <img src="https://i.postimg.cc/YqYhc9dK/image.png" alt="3. Nấu Bánh Ngào, Chè Đậu Xanh, Chè Khoai" class="culinary-card-img-3 relative z-10 w-full h-full object-contain p-1" />
+                                </div>
+                                <div class="font-extrabold text-[13.5px] text-cane-950 leading-snug mb-1">3. Nấu Bánh Ngào, Chè Đậu Xanh, Chè Khoai</div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Làm bánh ngào mật gừng xứ Nghệ, nấu chè trôi nước, chè sắn nóng hổi hay pha trà gừng mật mía ấm bụng.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="w-[235px] shrink-0 rounded-2xl border border-cane-200 p-3 bg-white shadow-2xs flex flex-col justify-between">
+                            <div>
+                                <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-cane-950 mb-2.5 border border-slate-200/80 flex items-center justify-center">
+                                    <img src="https://i.postimg.cc/KzCvwSL3/image.png" alt="" aria-hidden="true" class="culinary-card-bg-4 absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                                    <img src="https://i.postimg.cc/KzCvwSL3/image.png" alt="4. Ướp Thịt Nướng, Pha Nước Chấm, Đồ Uống" class="culinary-card-img-4 relative z-10 w-full h-full object-contain p-1" />
+                                </div>
+                                <div class="font-extrabold text-[13.5px] text-cane-950 leading-snug mb-1">4. Ướp Thịt Nướng, Pha Nước Chấm, Đồ Uống</div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Giúp món nướng lên màu vàng óng tự nhiên, thịt mềm thơm không bị cháy khét như dùng đường cát.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             5. SECTION "CHI TIẾT TẠO NÊN CHẤT LƯỢNG" (#details-section)
+             Đặt ngay trước phần Đặt Hàng • Hiển thị trọn vẹn 100% bức ảnh ở cả 4 ô
+             ========================================================================= -->
+        <section id="details-section" class="py-7 px-3.5 bg-white border-b border-slate-100">
+            <div class="text-center mb-5">
+                <span class="inline-block bg-sugarcane-light text-cane-800 border border-cane-200 text-[10.5px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Tiêu Chuẩn Vàng Xứ Nghệ
+                </span>
+                <h2 class="text-[19px] font-extrabold text-cane-950 mt-2 tracking-tight">
+                    Chi Tiết Tạo Nên Chất Lượng Mật Mía Nghệ An
+                </h2>
+                <p class="text-xs text-slate-600 mt-1">
+                    Từng giọt mật sánh đặc nấu thủ công từ mía tươi xứ Nghệ (Chạm vào ảnh để phóng to).
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Ô 1: Đủ 1 Lít = Nặng 1,44 Kg -->
+                <div class="bg-sugarcane-light/60 rounded-3xl border border-cane-200/90 p-3.5 shadow-2xs">
+                    <div onclick="openReviewPhotoModal(document.getElementById('quality-card-img-1').src, 'Đủ 1 Lít = Nặng 1,44 Kg')"
+                         class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-cane-950 mb-3 border border-slate-200/80 flex items-center justify-center cursor-zoom-in">
+                        <img id="quality-card-bg-1"
+                             src="https://i.postimg.cc/v8vBYjWh/image.png"
+                             alt=""
+                             aria-hidden="true"
+                             class="absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                        <img id="quality-card-img-1"
+                             src="https://i.postimg.cc/v8vBYjWh/image.png"
+                             alt="Đủ 1 Lít = Nặng 1,44 Kg"
+                             class="relative z-10 w-full h-full object-contain p-1" />
+                        <span class="absolute top-2.5 left-2.5 z-20 bg-cane-900/85 text-amber-300 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full border border-amber-400/30">
+                            01 • Chuẩn 1,44Kg/Lít
+                        </span>
+                        <button type="button" onclick="event.stopPropagation(); triggerQualityFileSelect(1)"
+                                class="owner-edit-btn hidden absolute top-2.5 right-2.5 z-20 bg-slate-950/80 hover:bg-slate-900 text-amber-300 text-[11px] font-extrabold px-2.5 py-1 rounded-lg border border-amber-400/40"
+                                style="display: none !important;">
+                            📷 Đổi ảnh 1
+                        </button>
+                    </div>
+                    <h3 class="font-extrabold text-[15px] text-cane-950">Đủ 1 Lít = Nặng 1,44 Kg</h3>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                        Mật cô đặc già lửa nên tỷ trọng cao vượt trội: 1 chai 1.000ml đầy chuẩn nặng tới 1,44kg, sánh đặc kéo sợi không pha loãng.
+                    </p>
+                </div>
+
+                <!-- Ô 2: Nấu Chảo Gang Củi Bã Mía -->
+                <div class="bg-sugarcane-light/60 rounded-3xl border border-cane-200/90 p-3.5 shadow-2xs">
+                    <div onclick="openReviewPhotoModal(document.getElementById('quality-card-img-2').src, 'Nấu Chảo Gang Củi Bã Mía')"
+                         class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-cane-950 mb-3 border border-slate-200/80 flex items-center justify-center cursor-zoom-in">
+                        <img id="quality-card-bg-2"
+                             src="https://i.postimg.cc/SKH0NvH3/A-nh-ma-n-hi-nh-2026-11-05-lu-c-00-39-54.png"
+                             alt=""
+                             aria-hidden="true"
+                             class="absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                        <img id="quality-card-img-2"
+                             src="https://i.postimg.cc/SKH0NvH3/A-nh-ma-n-hi-nh-2026-11-05-lu-c-00-39-54.png"
+                             alt="Nấu Chảo Gang Củi Bã Mía"
+                             class="relative z-10 w-full h-full object-contain p-1" />
+                        <span class="absolute top-2.5 left-2.5 z-20 bg-cane-900/85 text-amber-300 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full border border-amber-400/30">
+                            02 • Lò Nấu Truyền Thống
+                        </span>
+                        <button type="button" onclick="event.stopPropagation(); triggerQualityFileSelect(2)"
+                                class="owner-edit-btn hidden absolute top-2.5 right-2.5 z-20 bg-slate-950/80 hover:bg-slate-900 text-amber-300 text-[11px] font-extrabold px-2.5 py-1 rounded-lg border border-amber-400/40"
+                                style="display: none !important;">
+                            📷 Đổi ảnh 2
+                        </button>
+                    </div>
+                    <h3 class="font-extrabold text-[15px] text-cane-950">Nấu Chảo Gang Củi Bã Mía</h3>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                        Nước mía tươi ép trong ngày được đun sôi liên tục trên hệ thống chảo gang lớn, vớt bọt thủ công nhiều lần cho màu hổ phách trong vắt.
+                    </p>
+                </div>
+
+                <!-- Ô 3: 100% Tự Nhiên Không Phụ Gia -->
+                <div class="bg-sugarcane-light/60 rounded-3xl border border-cane-200/90 p-3.5 shadow-2xs">
+                    <div onclick="openReviewPhotoModal(document.getElementById('quality-card-img-3').src, '100% Tự Nhiên Không Phụ Gia')"
+                         class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-cane-950 mb-3 border border-slate-200/80 flex items-center justify-center cursor-zoom-in">
+                        <img id="quality-card-bg-3"
+                             src="https://i.postimg.cc/qMD1TCPD/image.png"
+                             alt=""
+                             aria-hidden="true"
+                             class="absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                        <img id="quality-card-img-3"
+                             src="https://i.postimg.cc/qMD1TCPD/image.png"
+                             alt="100% Tự Nhiên Không Phụ Gia"
+                             class="relative z-10 w-full h-full object-contain p-1" />
+                        <span class="absolute top-2.5 left-2.5 z-20 bg-cane-900/85 text-amber-300 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full border border-amber-400/30">
+                            03 • Mía Tươi Xứ Nghệ
+                        </span>
+                        <button type="button" onclick="event.stopPropagation(); triggerQualityFileSelect(3)"
+                                class="owner-edit-btn hidden absolute top-2.5 right-2.5 z-20 bg-slate-950/80 hover:bg-slate-900 text-amber-300 text-[11px] font-extrabold px-2.5 py-1 rounded-lg border border-amber-400/40"
+                                style="display: none !important;">
+                            📷 Đổi ảnh 3
+                        </button>
+                    </div>
+                    <h3 class="font-extrabold text-[15px] text-cane-950">100% Tự Nhiên Không Phụ Gia</h3>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                        Không đường hóa học, không phẩm màu, không chất bảo quản. Vị ngọt thanh dịu, thơm nức mùi mật mía quê truyền thống.
+                    </p>
+                </div>
+
+                <!-- Ô 4: Bảo Quản Tự Nhiên Cả Năm -->
+                <div class="bg-sugarcane-light/60 rounded-3xl border border-cane-200/90 p-3.5 shadow-2xs">
+                    <div onclick="openReviewPhotoModal(document.getElementById('quality-card-img-4').src, 'Bảo Quản Tự Nhiên Cả Năm')"
+                         class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-cane-950 mb-3 border border-slate-200/80 flex items-center justify-center cursor-zoom-in">
+                        <img id="quality-card-bg-4"
+                             src="https://i.postimg.cc/rwkWry2R/IMG-6905.jpg"
+                             alt=""
+                             aria-hidden="true"
+                             class="absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                        <img id="quality-card-img-4"
+                             src="https://i.postimg.cc/rwkWry2R/IMG-6905.jpg"
+                             alt="Bảo Quản Tự Nhiên Cả Năm"
+                             class="relative z-10 w-full h-full object-contain p-1" />
+                        <span class="absolute top-2.5 left-2.5 z-20 bg-cane-900/85 text-amber-300 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full border border-amber-400/30">
+                            04 • Để Cả Năm Không Hỏng
+                        </span>
+                        <button type="button" onclick="event.stopPropagation(); triggerQualityFileSelect(4)"
+                                class="owner-edit-btn hidden absolute top-2.5 right-2.5 z-20 bg-slate-950/80 hover:bg-slate-900 text-amber-300 text-[11px] font-extrabold px-2.5 py-1 rounded-lg border border-amber-400/40"
+                                style="display: none !important;">
+                            📷 Đổi ảnh 4
+                        </button>
+                    </div>
+                    <h3 class="font-extrabold text-[15px] text-cane-950">Bảo Quản Tự Nhiên Cả Năm</h3>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                        Đóng chai PET dày dặn nắp đỏ niêm phong kỹ. Chỉ cần để nơi thoáng mát nhiệt độ phòng suốt 12–18 tháng không lo chua hay đóng đường.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             6. SECTION "ĐẶT HÀNG NHANH" (#order-section)
+             Không điền form • 1 ô nhảy số trực tiếp + Nút Đặt Qua Zalo & Gọi Điện
+             ========================================================================= -->
+        <section id="order-section" class="py-7 px-3.5 bg-sugarcane-light/70 border-b border-cane-200">
+            <div class="bg-white rounded-3xl border-2 border-cane-800 p-4 shadow-md space-y-4">
+                <div class="text-center">
+                    <span class="inline-block bg-cane-800 text-amber-300 text-[10.5px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Đặt Hàng Nhanh • Ship COD Toàn Quốc
+                    </span>
+                    <h2 class="text-[19px] font-extrabold text-cane-950 mt-2">
+                        Chọn Số Lượng & Đặt Hàng Nhanh
+                    </h2>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                        Không cần điền form rườm rà! Chọn số Lít bên dưới rồi bấm <strong>Đặt Qua Zalo</strong> hoặc <strong>Gọi Điện (0375.013.878)</strong>.
+                    </p>
+                </div>
+
+                <!-- 1 Ô HIỂN THỊ SỐ DUY NHẤT (Tự động nhảy số trực tiếp khi tăng/giảm lượng mật ở dưới) -->
+                <div id="live-dynamic-liter-badge"
+                     class="w-full rounded-2xl bg-cane-800 text-white p-3.5 border-2 border-cane-900 shadow-xs flex items-center justify-between gap-2 transition-all duration-200">
+                    <div class="min-w-0">
+                        <div class="text-[10.5px] font-bold text-cane-200 uppercase tracking-wider">Đang chọn số lượng:</div>
+                        <div class="flex items-baseline gap-1.5 mt-0.5">
+                            <span id="live-badge-liters-num" class="text-2xl font-extrabold text-amber-300 tracking-tight whitespace-nowrap">3 Lít</span>
+                            <span id="live-badge-detail-text" class="text-xs font-extrabold text-white whitespace-nowrap">(~4,32 kg — 135.000đ)</span>
+                        </div>
+                    </div>
+                    <span id="live-badge-ship-tag" class="px-2.5 py-1 rounded-xl text-[10.5px] font-extrabold uppercase bg-amber-400 text-slate-950 shrink-0 whitespace-nowrap">
+                        FREESHIP
+                    </span>
+                </div>
+
+                <!-- Bộ chọn tăng/giảm số Lít trực tiếp chuẩn ngón tay cái -->
+                <div class="bg-sugarcane-light rounded-2xl p-3.5 border border-cane-200 flex items-center justify-between gap-2">
+                    <div class="min-w-0">
+                        <div class="font-extrabold text-[13.5px] text-cane-950">Chỉnh số Lít mật mía:</div>
+                        <div id="stepper-sub-info" class="text-[11px] font-semibold text-emerald-700 mt-0.5 truncate">~4,32 kg • Miễn phí ship toàn quốc</div>
+                    </div>
+                    <div class="flex items-center gap-1.5 shrink-0">
+                        <button type="button" onclick="stepSelectedLiters(-1)"
+                                aria-label="Giảm 1 Lít"
+                                class="w-11 h-11 rounded-xl bg-white hover:bg-slate-100 active:scale-95 border border-slate-300 font-extrabold text-xl text-slate-800 flex items-center justify-center shadow-2xs transition">−</button>
+                        <input type="number" id="free-liter-input" min="1" max="500" value="3"
+                               oninput="handleDirectLiterInput(this.value)"
+                               onblur="handleDirectLiterBlur(this.value)"
+                               class="w-14 h-11 rounded-xl border-2 border-cane-800 bg-white text-center font-extrabold text-cane-950 focus:outline-none" />
+                        <button type="button" onclick="stepSelectedLiters(1)"
+                                aria-label="Tăng 1 Lít"
+                                class="w-11 h-11 rounded-xl bg-cane-800 hover:bg-cane-900 active:scale-95 text-white font-extrabold text-xl flex items-center justify-center shadow-2xs transition">+</button>
+                    </div>
+                </div>
+
+                <!-- Bảng tóm tắt thanh toán rõ ràng -->
+                <div class="bg-slate-50 rounded-2xl p-3.5 border border-slate-200/90 space-y-2 text-xs">
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-600">Số lượng đặt:</span>
+                        <strong id="order-summary-qty" class="text-cane-950 font-extrabold">3 Lít (~4,32 kg)</strong>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-600">Tiền mật mía (45.000đ/Lít):</span>
+                        <strong id="order-summary-sub" class="text-slate-900 font-bold">135.000đ</strong>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-600">Phí vận chuyển:</span>
+                        <strong id="order-summary-ship" class="text-emerald-700 font-extrabold">MIỄN PHÍ SHIP (0đ)</strong>
+                    </div>
+                    <div class="flex justify-between pt-2 border-t border-slate-200 items-baseline">
+                        <span class="font-extrabold text-cane-950 text-[13px]">Tổng thanh toán khi nhận hàng:</span>
+                        <strong id="order-summary-total" class="text-xl font-extrabold text-red-600">135.000đ</strong>
+                    </div>
+                </div>
+
+                <!-- Khung xem trước nội dung đơn tự động sao chép khi mở Zalo -->
+                <div class="bg-sugarcane-light/80 rounded-2xl p-3 border border-dashed border-cane-700/60 flex items-center justify-between gap-2 text-xs">
+                    <div class="min-w-0 flex-1">
+                        <span class="block text-[10.5px] font-extrabold text-cane-800 uppercase tracking-wide">
+                            📋 Tự động chép đơn khi mở Zalo:
+                        </span>
+                        <div id="zalo-preview-pill-text" class="font-bold text-slate-800 mt-0.5 truncate text-[11.5px]">
+                            Đặt 3 Lít Mật Mía Nghệ An (~4,32 kg) - Tổng: 135.000đ (Miễn phí ship)
+                        </div>
+                    </div>
+                    <button type="button" onclick="copyCurrentSelectionOrderText(true)"
+                            id="inline-quick-copy-btn"
+                            class="shrink-0 px-2.5 py-1.5 rounded-lg bg-amber-300 active:bg-amber-400 text-slate-950 font-extrabold text-[11px] transition">
+                        Chép đơn
+                    </button>
+                </div>
+
+                <!-- 2 Nút Bấm Lớn Đặt Hàng Trực Tiếp: Qua Zalo hoặc Gọi Điện Thoại -->
+                <div class="space-y-2.5 pt-1">
+                    <!-- Nút 1: Đặt Hàng Qua Zalo -->
+                    <button type="button" onclick="handleDirectZaloOrder()"
+                            class="w-full min-h-[54px] py-3.5 px-4 rounded-2xl bg-[#0068FF] hover:bg-[#0052cc] active:scale-[0.98] text-white font-extrabold text-[14px] uppercase tracking-wide shadow-md transition flex items-center justify-center gap-2">
+                        <svg viewBox="0 0 48 48" class="w-6 h-6 fill-current shrink-0">
+                            <path d="M24 4C12.95 4 4 12.15 4 22.2c0 5.65 2.84 10.7 7.3 14.05-.35 2.15-1.35 5.1-1.5 5.45-.2.45.15.85.6.7.45-.15 4.55-2.05 6.65-3.15 2.2.6 4.52.95 6.95.95 11.05 0 20-8.15 20-18S35.05 4 24 4z" fill="#ffffff"/>
+                            <text x="24" y="26.5" text-anchor="middle" fill="#0068FF" font-size="11.5" font-weight="800" font-family="Be Vietnam Pro, Inter, sans-serif">Zalo</text>
+                        </svg>
+                        <span>ĐẶT HÀNG QUA ZALO (0375.013.878)</span>
+                    </button>
+
+                    <!-- Dòng chữ nghiêng nhỏ Hotline hỗ trợ ở dưới -->
+                    <div class="text-center pt-0.5">
+                        <a href="tel:0375013878" onclick="handleDirectPhoneOrder()"
+                           class="inline-flex items-center justify-center gap-1 text-xs italic text-slate-600 hover:text-cane-900 active:opacity-75 transition">
+                            <span>📞 Hotline hỗ trợ:</span>
+                            <span class="font-semibold underline">0375.013.878</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             7. SECTION "NHẬN XÉT CỦA KHÁCH HÀNG" (#reviews-section)
+             Hiển thị từng thẻ sắc nét chuẩn điện thoại • Tự động chuyển 3 giây
+             ========================================================================= -->
+        <section id="reviews-section" class="py-7 px-3.5 bg-white border-b border-slate-100">
+            <div class="flex items-end justify-between gap-2 mb-4">
+                <div>
+                    <span class="inline-block bg-sugarcane-light text-cane-900 border border-cane-200 text-[10.5px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                        7 Phản Hồi Thực Tế • Tự Chuyển 3 Giây
+                    </span>
+                    <h2 class="text-[19px] font-extrabold text-cane-950 mt-1.5 tracking-tight">
+                        Khách Hàng Nhận Xét Về Mật Mía
+                    </h2>
+                </div>
+
+                <!-- Nút điều hướng Trái / Phải -->
+                <div class="flex items-center gap-1.5 shrink-0">
+                    <button type="button" onclick="stepReviewCarousel(-1)" aria-label="Xem đánh giá trước"
+                            class="w-9 h-9 rounded-full bg-slate-100 active:scale-90 border border-slate-300 text-cane-950 font-extrabold flex items-center justify-center shadow-2xs transition">
+                        ←
+                    </button>
+                    <button type="button" onclick="stepReviewCarousel(1)" aria-label="Xem đánh giá tiếp theo"
+                            class="w-9 h-9 rounded-full bg-sugarcane-dark active:scale-90 text-white font-extrabold flex items-center justify-center shadow-2xs transition">
+                        →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Khung trượt ngang 1 thẻ lớn chuẩn màn hình điện thoại -->
+            <div class="overflow-hidden -mx-1.5"
+                 onmouseenter="pauseReviewAutoSlide()"
+                 onmouseleave="resumeReviewAutoSlide()"
+                 ontouchstart="handleReviewTouchStart(event)"
+                 ontouchend="handleReviewTouchEnd(event)">
+                <div id="reviews-carousel-track" class="flex transition-transform duration-500 ease-out">
+                    <!-- Render bằng JS -->
+                </div>
+            </div>
+
+            <!-- Dots chỉ báo vị trí slide -->
+            <div id="reviews-carousel-dots" class="flex items-center justify-center gap-1.5 mt-4"></div>
+        </section>
+
+        <!-- =========================================================================
+             8. SECTION "CÂU HỎI THƯỜNG GẶP" (#faq-section)
+             ========================================================================= -->
+        <section id="faq-section" class="py-7 px-3.5 bg-sugarcane-light/50 border-b border-slate-100">
+            <div class="text-center mb-4">
+                <span class="inline-block bg-white text-cane-800 border border-cane-200 text-[10.5px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Giải Đáp Nhanh
+                </span>
+                <h2 class="text-[19px] font-extrabold text-cane-950 mt-1.5 tracking-tight">
+                    Câu Hỏi Thường Gặp
+                </h2>
+            </div>
+            <div id="faq-accordion-list" class="space-y-2.5"></div>
+        </section>
+
+        <!-- =========================================================================
+             9. FOOTER
+             ========================================================================= -->
+        <footer class="bg-sugarcane-dark text-white py-8 px-4 border-t border-cane-800">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <!-- Chủ shop chạm nhanh 5 lần vào logo chân trang (hoặc bấm Ctrl+Shift+A) để mở bảng cấu hình ẩn bên dưới -->
+                    <img id="footer-secret-logo"
+                         onclick="handleSecretAdminTap()"
+                         src="https://i.postimg.cc/02XwQG2G/A-nh-ma-n-hi-nh-2026-11-05-lu-c-00-32-50.png"
+                         alt="Logo Mật Mía Nghệ An"
+                         class="w-11 h-11 rounded-full object-cover border border-white/25 bg-white shrink-0 shadow-xs select-none cursor-default" />
+                    <div>
+                        <div class="font-extrabold text-base tracking-tight">Mật Mía Nghệ An Nguyên Chất</div>
+                        <p class="text-xs text-amber-300 font-semibold">
+                            Tạo niềm tin - Bán chất lượng - Tạo trải nghiệm
+                        </p>
+                    </div>
+                </div>
+                <div class="text-xs text-slate-200 space-y-1.5 border-t border-white/10 pt-3">
+                    <div>• <strong>Quy cách chuẩn:</strong> 1 Lít = 1,44kg • Giá tại lò: 45.000đ/Lít</div>
+                    <div>• <strong>Ưu đãi vận chuyển:</strong> Miễn phí ship toàn quốc từ 3 Lít (135.000đ)</div>
+                    <div>• <strong>Hotline / Zalo đặt hàng:</strong> <a href="https://zalo.me/0375013878" target="_blank" rel="noopener noreferrer" class="text-amber-300 underline font-extrabold">0375.013.878</a></div>
+                    <div>• <strong>Giao hàng:</strong> Ship COD toàn quốc — Kiểm tra hàng trước khi thanh toán</div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- BẢNG CẤU HÌNH CHỦ SHOP ĐẶT DƯỚI CÙNG & ẨN TUYỆT ĐỐI KHỎI KHÁCH HÀNG -->
+        <div id="email-test-banner" class="owner-edit-btn hidden bg-amber-50 border-t-2 border-amber-400 px-3.5 py-4 text-xs text-slate-800" style="display: none !important;">
+            <div class="max-w-6xl mx-auto space-y-2.5">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-2.5 bg-white p-3 rounded-xl border border-amber-300 shadow-2xs">
+                    <div class="flex items-start sm:items-center gap-2.5 min-w-0">
+                        <span id="email-test-badge" class="inline-flex items-center px-2.5 py-1 rounded-full font-extrabold text-[10px] uppercase bg-amber-500 text-slate-950 shrink-0">
+                            Cấu Hình Nhận Đơn
+                        </span>
+                        <div id="email-test-message" class="font-medium leading-snug text-slate-800 text-xs">
+                            Dán mã <strong>Web3Forms Access Key</strong> (tạo với URL = <code>localhost</code>) hoặc <strong>Telegram Bot</strong> vào ô dưới rồi bấm <strong>Test Bắn Đơn Ngay</strong>.
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-2 shrink-0">
+                        <button type="button" onclick="triggerManualTestOrder()"
+                                class="px-3 py-2 rounded-lg bg-cane-800 hover:bg-cane-900 text-white font-extrabold text-xs shadow-2xs transition flex items-center gap-1">
+                            <span>🚀 Test Bắn Đơn Ngay</span>
+                        </button>
+                        <button type="button" onclick="toggleCustomerPreviewMode(true)"
+                                class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs shadow-2xs transition flex items-center gap-1">
+                            <span>✕ Ẩn Ngay Khỏi Web</span>
+                        </button>
+                        <button type="button" onclick="exportCleanCustomerHtml()"
+                                class="px-3.5 py-2 rounded-lg bg-amber-400 hover:bg-amber-500 text-slate-950 font-extrabold text-xs shadow-2xs border border-amber-500 transition flex items-center gap-1">
+                            <span>💾 Xuất File Web Hoàn Chỉnh (.HTML)</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Khung nhập Access Key Web3Forms + Telegram Bot -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-2.5">
+                    <div class="lg:col-span-7 bg-white rounded-xl p-3 border border-cane-700/60 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                        <div class="shrink-0">
+                            <div class="font-extrabold text-cane-950 text-xs">Mã Web3Forms (Gửi về maikoty003@gmail.com):</div>
+                            <a href="https://web3forms.com/#start" target="_blank" rel="noopener noreferrer" class="text-[11px] text-blue-600 font-bold underline">Lấy mã miễn phí tại web3forms.com (URL: localhost) ↗</a>
+                        </div>
+                        <input type="text" id="web3forms-key-input" placeholder="Dán Access Key (VD: a1b2c3d4-e5f6-...)"
+                               class="flex-1 rounded-lg border border-slate-300 px-3 py-2 text-xs font-mono focus:border-cane-800 focus:outline-none" />
+                        <button type="button" onclick="saveWeb3FormsKeyAndTest()"
+                                class="px-3.5 py-2.5 rounded-lg bg-cane-800 hover:bg-cane-900 text-white font-extrabold text-xs shrink-0 transition">
+                            Lưu Mã & Test
+                        </button>
+                    </div>
+
+                    <div class="lg:col-span-5 bg-white rounded-xl p-3 border border-slate-200 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                        <div class="shrink-0">
+                            <div class="font-bold text-slate-800 text-xs">Telegram Bot (Tùy chọn):</div>
+                            <div class="text-[10px] text-slate-500">Nổ đơn về điện thoại trong 1s</div>
+                        </div>
+                        <input type="text" id="tg-bot-token-input" placeholder="Bot Token..."
+                               class="flex-1 min-w-0 rounded-lg border border-slate-300 px-2.5 py-2 text-xs font-mono focus:border-cane-800 focus:outline-none" />
+                        <input type="text" id="tg-chat-id-input" placeholder="Chat ID..."
+                               class="w-full sm:w-28 rounded-lg border border-slate-300 px-2.5 py-2 text-xs font-mono focus:border-cane-800 focus:outline-none" />
+                    </div>
+                </div>
+
+                <!-- Tùy chọn thay 4 ảnh minh họa cho 4 thẻ Chất Lượng (1 - 2 - 3 - 4) -->
+                <div class="bg-white rounded-xl p-3 border border-slate-200 space-y-2.5">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <div>
+                            <div class="font-bold text-slate-800 text-xs">Ảnh 4 Ô Chất Lượng (Thay thế số 01 • 02 • 03 • 04):</div>
+                            <span class="text-[10px] text-slate-500">Dán link ảnh (postimages.org) hoặc bấm 📁 Chọn ảnh từ máy cho từng ô</span>
+                        </div>
+                        <button type="button" onclick="saveQualityCardImagesFromInputs()"
+                                class="px-3.5 py-1.5 rounded-lg bg-cane-800 hover:bg-cane-900 text-white font-extrabold text-xs transition">
+                            Lưu 4 Ảnh Chất Lượng
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+                        <div class="flex items-center gap-1.5">
+                            <input type="url" id="quality-img-url-1" placeholder="Link ảnh Ô 1 (1L = 1,44kg)..."
+                                   class="flex-1 min-w-0 rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs font-mono focus:border-cane-800 focus:outline-none" />
+                            <button type="button" onclick="triggerQualityFileSelect(1)" title="Chọn ảnh Ô 1 từ máy"
+                                    class="px-2.5 py-1.5 rounded-lg bg-amber-100 hover:bg-amber-200 text-slate-900 font-bold text-xs shrink-0">
+                                📁 Ô 1
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <input type="url" id="quality-img-url-2" placeholder="Link ảnh Ô 2 (Nấu chảo gang)..."
+                                   class="flex-1 min-w-0 rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs font-mono focus:border-cane-800 focus:outline-none" />
+                            <button type="button" onclick="triggerQualityFileSelect(2)" title="Chọn ảnh Ô 2 từ máy"
+                                    class="px-2.5 py-1.5 rounded-lg bg-amber-100 hover:bg-amber-200 text-slate-900 font-bold text-xs shrink-0">
+                                📁 Ô 2
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <input type="url" id="quality-img-url-3" placeholder="Link ảnh Ô 3 (100% Tự nhiên)..."
+                                   class="flex-1 min-w-0 rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs font-mono focus:border-cane-800 focus:outline-none" />
+                            <button type="button" onclick="triggerQualityFileSelect(3)" title="Chọn ảnh Ô 3 từ máy"
+                                    class="px-2.5 py-1.5 rounded-lg bg-amber-100 hover:bg-amber-200 text-slate-900 font-bold text-xs shrink-0">
+                                📁 Ô 3
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <input type="url" id="quality-img-url-4" placeholder="Link ảnh Ô 4 (Bảo quản cả năm)..."
+                                   class="flex-1 min-w-0 rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs font-mono focus:border-cane-800 focus:outline-none" />
+                            <button type="button" onclick="triggerQualityFileSelect(4)" title="Chọn ảnh Ô 4 từ máy"
+                                    class="px-2.5 py-1.5 rounded-lg bg-amber-100 hover:bg-amber-200 text-slate-900 font-bold text-xs shrink-0">
+                                📁 Ô 4
+                            </button>
+                        </div>
+                    </div>
+                    <input type="file" id="quality-file-input-hidden" accept="image/*" class="hidden" onchange="handleQualityFileChange(event)" />
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================================================================
+             10. THANH CHỐT ĐƠN CỐ ĐỊNH DƯỚI ĐÁY ĐIỆN THOẠI (STICKY BOTTOM BAR)
+             Luôn hiển thị Số Lít + Tổng tiền bên trái & 2 nút Đặt Zalo / Gọi Ngay bên phải
+             ========================================================================= -->
+        <div class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] z-30 bg-white/95 backdrop-blur-md border-t-2 border-cane-800/20 px-3 py-2 flex items-center justify-between gap-2 shadow-[0_-6px_20px_rgba(0,0,0,0.08)]">
+            <div onclick="scrollToOrderSection()" class="min-w-0 flex-1 cursor-pointer">
+                <div class="flex items-center gap-1">
+                    <span id="mobile-bar-liters-badge" class="bg-cane-800 text-amber-300 font-extrabold text-[10px] px-1.5 py-0.5 rounded-md">3 Lít</span>
+                    <span id="mobile-bar-ship-badge" class="text-[10px] font-extrabold text-emerald-700 truncate">Freeship</span>
+                </div>
+                <div id="mobile-bar-price" class="font-extrabold text-[15px] text-red-600 leading-tight mt-0.5 truncate">135.000đ</div>
+            </div>
+            <div class="flex items-center gap-1.5 shrink-0">
+                <a href="tel:0375013878" onclick="handleDirectPhoneOrder()"
+                   class="h-11 px-3 rounded-xl bg-sugarcane-light border border-cane-700/30 text-cane-950 font-extrabold text-xs flex items-center justify-center gap-1 active:scale-95 transition whitespace-nowrap">
+                    <span>📞 Gọi Ngay</span>
+                </a>
+                <button type="button" onclick="handleDirectZaloOrder()"
+                        class="h-11 px-3.5 rounded-xl bg-[#0068FF] active:scale-95 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-sm transition whitespace-nowrap">
+                    <span>💬 Đặt Zalo</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- =========================================================================
+             11. NGĂN KÉO GIỎ ĐƠN HÀNG ("ĐƠN HÀNG CỦA BẠN" - MỞ KHI BẤM ICON XE ĐẨY)
+             ========================================================================= -->
+        <div id="cart-drawer-backdrop" onclick="closeCartDrawer()" class="hidden fixed inset-0 bg-slate-950/50 z-40 backdrop-blur-xs"></div>
+        <aside id="cart-drawer" class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+            <div class="bg-sugarcane-dark text-white px-5 py-4 flex items-center justify-between border-b border-cane-800">
+                <div class="flex items-center gap-2.5">
+                    <svg class="w-5 h-5 text-amber-300" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                    <h3 class="font-extrabold text-base">Đơn Hàng Của Bạn</h3>
+                </div>
+                <button type="button" onclick="closeCartDrawer()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center font-bold text-sm">
+                    ✕
+                </button>
+            </div>
+
+            <div class="flex-1 overflow-y-auto p-5 space-y-5 text-xs sm:text-sm">
+                <!-- Gói đang chọn -->
+                <div class="bg-sugarcane-light rounded-2xl p-4 border border-cane-200 space-y-3">
+                    <div class="flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-3 min-w-0">
+                            <img src="https://i.postimg.cc/rwkWry2R/IMG-6905.jpg"
+                                 alt="Mật Mía Nghệ An"
+                                 class="w-12 h-14 rounded-xl object-contain bg-cane-950 border border-cane-300 shrink-0 shadow-2xs" />
+                            <div class="min-w-0">
+                                <div id="drawer-pkg-title" class="font-extrabold text-sm text-cane-950 truncate">Mật Mía Nghệ An (3 Lít)</div>
+                                <div id="drawer-pkg-weight" class="text-xs text-slate-600 mt-0.5">Khối lượng: ~4,32 kg</div>
+                            </div>
+                        </div>
+                        <div class="inline-flex items-center gap-1.5 bg-white rounded-xl p-1 border border-slate-200 shrink-0">
+                            <button type="button" onclick="stepSelectedLiters(-1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 font-extrabold text-sm flex items-center justify-center">−</button>
+                            <span id="drawer-liter-count" class="font-extrabold text-xs px-2 text-cane-950">3 Lít</span>
+                            <button type="button" onclick="stepSelectedLiters(1)" class="w-7 h-7 rounded-lg bg-cane-800 text-white font-extrabold text-sm flex items-center justify-center">+</button>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-cane-200 pt-2.5 space-y-1 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-slate-600">Tiền mật (45.000đ/Lít):</span>
+                            <strong id="drawer-subtotal" class="text-slate-900">135.000đ</strong>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-600">Phí vận chuyển:</span>
+                            <strong id="drawer-ship" class="text-cane-800">MIỄN PHÍ SHIP (0đ)</strong>
+                        </div>
+                        <div class="flex justify-between pt-1.5 border-t border-cane-200 items-baseline">
+                            <span class="font-extrabold text-cane-950">Tổng thanh toán:</span>
+                            <strong id="drawer-total" class="text-base text-red-600">135.000đ</strong>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 pt-1">
+                        <button type="button" onclick="closeCartDrawer(); handleDirectZaloOrder();"
+                                class="w-full py-3.5 px-4 rounded-xl bg-[#0068FF] hover:bg-[#0052cc] text-white font-extrabold text-xs uppercase tracking-wide shadow-sm flex items-center justify-center gap-1.5 transition">
+                            <span>💬 Đặt Qua Zalo 0375.013.878</span>
+                        </button>
+                        <div class="text-center pt-0.5">
+                            <a href="tel:0375013878" onclick="handleDirectPhoneOrder()"
+                               class="inline-flex items-center justify-center gap-1 text-xs italic text-slate-600 hover:text-cane-900 transition">
+                                <span>📞 Hotline hỗ trợ:</span>
+                                <span class="font-semibold underline">0375.013.878</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- =========================================================================
+             12. MODAL CẢM ƠN SAU KHI ĐẶT HÀNG THÀNH CÔNG (#thankyou-modal)
+             ========================================================================= -->
+        <div id="thankyou-modal" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-4">
+            <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border-2 border-cane-700 space-y-4">
+                <div class="relative w-14 h-14 mx-auto">
+                    <img src="https://i.postimg.cc/02XwQG2G/A-nh-ma-n-hi-nh-2026-11-05-lu-c-00-32-50.png"
+                         alt="Logo Mật Mía Nghệ An"
+                         class="w-14 h-14 rounded-full object-cover border-2 border-cane-700 shadow-sm bg-white" />
+                    <span class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center ring-2 ring-white">
+                        ✓
+                    </span>
+                </div>
+                <div class="text-center">
+                    <h3 class="font-extrabold text-xl text-cane-950">Đang chuyển đơn qua Zalo!</h3>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                        Thông tin đơn hàng đã được <strong>tự động sao chép</strong>. Khi cửa sổ <strong>Zalo (0375.013.878)</strong> mở ra, bạn chỉ cần <strong>Dán (Paste) và bấm Gửi</strong> nhé!
+                    </p>
+                </div>
+                <div id="thankyou-summary-box" class="bg-sugarcane-light rounded-2xl p-4 border border-cane-200 text-xs space-y-1.5"></div>
+                <div class="space-y-2">
+                    <a id="thankyou-zalo-direct-link"
+                       href="https://zalo.me/0375013878"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       onclick="copyLatestOrderForZalo()"
+                       class="w-full py-3.5 rounded-xl bg-[#0068FF] hover:bg-[#0052cc] text-white font-extrabold text-sm uppercase tracking-wide flex items-center justify-center gap-2 shadow-md transition">
+                        <span>💬 Mở Zalo Gửi Đơn Ngay (0375.013.878)</span>
+                    </a>
+                    <button type="button" onclick="copyLatestOrderForZalo(true)"
+                            id="copy-zalo-order-btn"
+                            class="w-full py-2.5 rounded-xl bg-amber-100 hover:bg-amber-200 text-slate-900 font-bold text-xs transition">
+                        📋 Sao chép lại nội dung đơn hàng
+                    </button>
+                    <button type="button" onclick="closeThankYouModal()"
+                            class="w-full py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs uppercase tracking-wide transition">
+                        Hoàn Tất & Đóng
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================================================================
+             13. MODAL PHÓNG TO ẢNH NHẬN XÉT THỰC TẾ CỦA KHÁCH HÀNG (#review-lightbox-modal)
+             ========================================================================= -->
+        <div id="review-lightbox-modal" onclick="closeReviewPhotoModal()" class="hidden fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6">
+            <div class="relative max-w-lg w-full bg-slate-900 rounded-3xl overflow-hidden border border-white/20 shadow-2xl" onclick="event.stopPropagation()">
+                <div class="flex items-center justify-between px-4 py-3 bg-slate-950/90 text-white border-b border-white/10">
+                    <span id="review-lightbox-caption" class="font-extrabold text-xs sm:text-sm text-amber-300 truncate">Phản hồi thực tế của khách hàng</span>
+                    <button type="button" onclick="closeReviewPhotoModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white font-extrabold text-sm flex items-center justify-center shrink-0">
+                        ✕
+                    </button>
+                </div>
+                <div class="p-2 bg-black flex items-center justify-center max-h-[80vh]">
+                    <img id="review-lightbox-img" src="" alt="Ảnh phản hồi thực tế" class="max-h-[75vh] w-auto max-w-full object-contain rounded-xl" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const SHOP_OWNER_EMAIL = 'maikoty003@gmail.com';
+        const SHOP_OWNER_ZALO_PHONE = '0375013878';
+        const UNIT_PRICE = 45000;
+        const UNIT_WEIGHT = 1.44;
+        let selectedLiters = 3;
+        let customBulkLiters = 4;
+        let currentSlideIndex = 0;
+
+        try {
+            localStorage.removeItem('MatMiaPlacedOrders');
+        } catch (e) {}
+
+        // Các biến cấu hình được nhúng sẵn khi chủ shop bấm "Xuất File Web Hoàn Chỉnh (.HTML)"
+        const DEFAULT_LOGO_URL = 'https://i.postimg.cc/02XwQG2G/A-nh-ma-n-hi-nh-2026-11-05-lu-c-00-32-50.png';
+        const DEFAULT_PRODUCT_IMAGE_URL = 'https://i.postimg.cc/rwkWry2R/IMG-6905.jpg';
+        const EMBEDDED_WEB3FORMS_KEY = '';
+        const EMBEDDED_TG_BOT_TOKEN = '';
+        const EMBEDDED_TG_CHAT_ID = '';
+        const EMBEDDED_DIRECT_MP4_URL = '';
+        const EMBEDDED_HERO_IMG_DATA = 'https://i.postimg.cc/rwkWry2R/IMG-6905.jpg';
+        const EMBEDDED_QUALITY_IMG_1 = 'https://i.postimg.cc/v8vBYjWh/image.png';
+        const EMBEDDED_QUALITY_IMG_2 = 'https://i.postimg.cc/SKH0NvH3/A-nh-ma-n-hi-nh-2026-11-05-lu-c-00-39-54.png';
+        const EMBEDDED_QUALITY_IMG_3 = 'https://i.postimg.cc/qMD1TCPD/image.png';
+        const EMBEDDED_QUALITY_IMG_4 = 'https://i.postimg.cc/rwkWry2R/IMG-6905.jpg';
+
+        const EMBEDDED_CULINARY_IMG_1 = 'https://i.postimg.cc/0jCdZfKq/image.png';
+        const EMBEDDED_CULINARY_IMG_2 = 'https://i.postimg.cc/FzPk7nJY/image.png';
+        const EMBEDDED_CULINARY_IMG_3 = 'https://i.postimg.cc/YqYhc9dK/image.png';
+        const EMBEDDED_CULINARY_IMG_4 = 'https://i.postimg.cc/KzCvwSL3/image.png';
+
+        try {
+            if (localStorage.getItem('MatMiaQualityImg_1') === 'https://i.postimg.cc/rwkWry2R/IMG-6905.jpg') {
+                localStorage.removeItem('MatMiaQualityImg_1');
+            }
+        } catch (e) {}
+
+        // Tạo ảnh minh họa sắc nét mặc định cho từng ô chất lượng nếu chủ shop chưa gắn ảnh riêng
+        function createQualityDefaultVisual(slotIndex) {
+            if (slotIndex === 1) {
+                return 'https://i.postimg.cc/v8vBYjWh/image.png';
+            }
+            if (slotIndex === 4) {
+                return DEFAULT_PRODUCT_IMAGE_URL;
+            }
+            if (slotIndex === 2) {
+                return 'https://i.postimg.cc/SKH0NvH3/A-nh-ma-n-hi-nh-2026-11-05-lu-c-00-39-54.png';
+            }
+            return 'https://i.postimg.cc/qMD1TCPD/image.png';
+        }
+
+        let activeQualitySlotToUpload = 1;
+
+        function getSavedQualityCardImage(slotIndex) {
+            const embeddedMap = {
+                1: EMBEDDED_QUALITY_IMG_1,
+                2: EMBEDDED_QUALITY_IMG_2,
+                3: EMBEDDED_QUALITY_IMG_3,
+                4: EMBEDDED_QUALITY_IMG_4
+            };
+            try {
+                const saved = localStorage.getItem('MatMiaQualityImg_' + slotIndex);
+                if (saved && saved.trim()) return saved.trim();
+            } catch (e) {}
+            if (embeddedMap[slotIndex] && embeddedMap[slotIndex].trim()) {
+                return embeddedMap[slotIndex].trim();
+            }
+            return createQualityDefaultVisual(slotIndex);
+        }
+
+        function renderQualityCardImages() {
+            for (let i = 1; i <= 4; i++) {
+                const imgEl = document.getElementById('quality-card-img-' + i);
+                const bgEl = document.getElementById('quality-card-bg-' + i);
+                const urlInput = document.getElementById('quality-img-url-' + i);
+                const srcVal = getSavedQualityCardImage(i);
+                if (imgEl) {
+                    imgEl.src = srcVal;
+                }
+                if (bgEl) {
+                    bgEl.src = srcVal;
+                }
+                if (urlInput && !srcVal.startsWith('data:image/')) {
+                    urlInput.value = srcVal;
+                }
+            }
+        }
+
+        function saveQualityCardImagesFromInputs() {
+            for (let i = 1; i <= 4; i++) {
+                const inp = document.getElementById('quality-img-url-' + i);
+                if (inp && inp.value.trim()) {
+                    try {
+                        localStorage.setItem('MatMiaQualityImg_' + i, inp.value.trim());
+                    } catch (e) {}
+                }
+            }
+            renderQualityCardImages();
+        }
+
+        function triggerQualityFileSelect(slotIndex) {
+            activeQualitySlotToUpload = slotIndex;
+            const fileInput = document.getElementById('quality-file-input-hidden');
+            if (fileInput) {
+                fileInput.value = '';
+                fileInput.click();
+            }
+        }
+
+        function handleQualityFileChange(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (ev) => {
+                const tempImg = new Image();
+                tempImg.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    const maxW = 720;
+                    const scale = Math.min(1, maxW / tempImg.width);
+                    canvas.width = Math.round(tempImg.width * scale);
+                    canvas.height = Math.round(tempImg.height * scale);
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(tempImg, 0, 0, canvas.width, canvas.height);
+                    const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+                    try {
+                        localStorage.setItem('MatMiaQualityImg_' + activeQualitySlotToUpload, dataUrl);
+                    } catch (e) {}
+                    const imgEl = document.getElementById('quality-card-img-' + activeQualitySlotToUpload);
+                    const bgEl = document.getElementById('quality-card-bg-' + activeQualitySlotToUpload);
+                    if (imgEl) imgEl.src = dataUrl;
+                    if (bgEl) bgEl.src = dataUrl;
+                };
+                tempImg.src = ev.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function formatMoney(amount) {
+            return Number(amount || 0).toLocaleString('vi-VN') + 'đ';
+        }
+
+        function formatKg(liters) {
+            return (liters * UNIT_WEIGHT).toFixed(2).replace('.', ',') + ' kg';
+        }
+
+        function computeOrder(liters) {
+            const l = Math.max(1, parseInt(liters, 10) || 1);
+            const subtotal = l * UNIT_PRICE;
+            const ship = l >= 3 ? 0 : 25000;
+            return {
+                liters: l,
+                weight: formatKg(l),
+                subtotal: subtotal,
+                ship: ship,
+                total: subtotal + ship
+            };
+        }
+
+        // =====================================================================
+        // BĂNG CHUYỀN HÌNH ẢNH SẢN PHẨM ĐẦU TRANG TỰ ĐỘNG CHẠY (AUTO-SLIDE 3 GIÂY - 9 ẢNH THỰC TẾ)
+        // =====================================================================
+        const heroProductImages = [
+            {
+                url: 'https://i.postimg.cc/DzdMRqX5/f4ed6068f2bd72e32bac.jpg',
+                caption: 'Hình ảnh thực tế Mật Mía Nghệ An tại lò (1/9)'
+            },
+            {
+                url: 'https://i.postimg.cc/cLf98QTP/1350c6e35436d4688d276.jpg',
+                caption: 'Mật mía nguyên chất sánh đặc chuẩn 1 Lít = 1,44kg (2/9)'
+            },
+            {
+                url: 'https://i.postimg.cc/vZ5q6W3F/2b3c2be8b93d3963602c1.jpg',
+                caption: 'Nấu thủ công chảo gang củi bã mía xứ Nghệ (3/9)'
+            },
+            {
+                url: 'https://i.postimg.cc/HkbZ7Q3S/71b9197c8ba90bf752b84.jpg',
+                caption: 'Màu mật hổ phách óng ả, thơm lừng tự nhiên (4/9)'
+            },
+            {
+                url: 'https://i.postimg.cc/13DCNpM2/bc90873015e595bbccf48.jpg',
+                caption: 'Đóng chai niêm phong kỹ, giao hàng toàn quốc (5/9)'
+            },
+            {
+                url: 'https://i.postimg.cc/XY9HywQW/c13b0af8982d1873413c2.jpg',
+                caption: 'Mật cô đặc già lửa bảo quản tự nhiên cả năm (6/9)'
+            },
+            {
+                url: 'https://i.postimg.cc/y80QSFv7/cf633bc1a914294a70057.jpg',
+                caption: '100% Mía tươi ép trong ngày không phụ gia (7/9)'
+            },
+            {
+                url: 'https://i.postimg.cc/HkbZ7QBp/d5a07665e4b064ee3da15.jpg',
+                caption: 'Gia vị vàng kho cá thịt, chấm bánh chưng, nấu chè (8/9)'
+            },
+            {
+                url: 'https://i.postimg.cc/LsRyknbp/d90e0cb79e621e3c47733.jpg',
+                caption: 'Kiểm tra hàng chuẩn 1,44kg/Lít trước khi thanh toán (9/9)'
+            }
+        ];
+
+        let currentHeroSlideIndex = 0;
+        let heroAutoSlideTimer = null;
+        let heroTouchStartX = 0;
+
+        function renderHeroCarousel() {
+            const track = document.getElementById('hero-carousel-track');
+            const dots = document.getElementById('hero-carousel-dots');
+            const thumbs = document.getElementById('hero-carousel-thumbs');
+            if (!track) return;
+
+            track.innerHTML = heroProductImages.map((item, idx) => {
+                const safeCap = item.caption.replace(/'/g, "\\'");
+                return `
+                    <div onclick="openReviewPhotoModal('${item.url}', '${safeCap}')"
+                         class="relative w-full h-full shrink-0 flex items-center justify-center overflow-hidden cursor-zoom-in">
+                        <img src="${item.url}"
+                             alt=""
+                             aria-hidden="true"
+                             class="absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-55 pointer-events-none select-none" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/15 pointer-events-none"></div>
+                        <img src="${item.url}"
+                             alt="${item.caption}"
+                             class="relative z-10 w-full h-full object-contain p-2 sm:p-3 drop-shadow-2xl transition-transform duration-300" />
+                    </div>
+                `;
+            }).join('');
+
+            if (dots) {
+                dots.innerHTML = heroProductImages.map((_, idx) => `
+                    <button type="button" onclick="goToHeroSlide(${idx})" id="hero-dot-${idx}"
+                            aria-label="Ảnh ${idx + 1}"
+                            class="h-1.5 rounded-full transition-all ${idx === 0 ? 'w-4 bg-amber-400' : 'w-1.5 bg-white/45 hover:bg-white/75'}"></button>
+                `).join('');
+            }
+
+            if (thumbs) {
+                thumbs.innerHTML = heroProductImages.map((item, idx) => `
+                    <button type="button" onclick="goToHeroSlide(${idx})" id="hero-thumb-${idx}"
+                            class="relative w-16 sm:w-20 aspect-[4/3] shrink-0 rounded-xl overflow-hidden bg-cane-950 border-2 transition-all ${idx === 0 ? 'border-cane-800 ring-2 ring-amber-400/80 shadow-xs opacity-100' : 'border-slate-200 opacity-65 hover:opacity-100'}">
+                        <img src="${item.url}" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover blur-md opacity-45 scale-110" />
+                        <img src="${item.url}" alt="Ảnh ${idx + 1}" loading="lazy" class="relative z-10 w-full h-full object-contain p-0.5" />
+                    </button>
+                `).join('');
+            }
+
+            updateHeroCarouselUI();
+        }
+
+        function updateHeroCarouselUI() {
+            const track = document.getElementById('hero-carousel-track');
+            const captionEl = document.getElementById('hero-slide-caption');
+            const counterEl = document.getElementById('hero-slide-counter');
+            const thumbsContainer = document.getElementById('hero-carousel-thumbs');
+            const total = heroProductImages.length;
+            if (!track || total === 0) return;
+
+            if (currentHeroSlideIndex >= total) currentHeroSlideIndex = 0;
+            if (currentHeroSlideIndex < 0) currentHeroSlideIndex = total - 1;
+
+            track.style.transform = `translateX(-${currentHeroSlideIndex * 100}%)`;
+
+            const activeItem = heroProductImages[currentHeroSlideIndex];
+            if (captionEl && activeItem) {
+                captionEl.textContent = activeItem.caption;
+            }
+            if (counterEl) {
+                counterEl.textContent = `${currentHeroSlideIndex + 1} / ${total}`;
+            }
+
+            heroProductImages.forEach((_, idx) => {
+                const dot = document.getElementById('hero-dot-' + idx);
+                if (dot) {
+                    dot.className = idx === currentHeroSlideIndex
+                        ? 'h-1.5 w-4 rounded-full bg-amber-400 transition-all'
+                        : 'h-1.5 w-1.5 rounded-full bg-white/45 hover:bg-white/75 transition-all';
+                }
+                const thumb = document.getElementById('hero-thumb-' + idx);
+                if (thumb) {
+                    const isCurrent = idx === currentHeroSlideIndex;
+                    thumb.className = isCurrent
+                        ? 'relative w-16 sm:w-20 aspect-[4/3] shrink-0 rounded-xl overflow-hidden bg-cane-950 border-2 border-cane-800 ring-2 ring-amber-400/80 shadow-xs opacity-100 transition-all'
+                        : 'relative w-16 sm:w-20 aspect-[4/3] shrink-0 rounded-xl overflow-hidden bg-cane-950 border-2 border-slate-200 opacity-65 hover:opacity-100 transition-all';
+                    if (isCurrent && thumbsContainer) {
+                        const scrollLeftTarget = thumb.offsetLeft - (thumbsContainer.clientWidth / 2) + (thumb.clientWidth / 2);
+                        thumbsContainer.scrollTo({ left: Math.max(0, scrollLeftTarget), behavior: 'smooth' });
+                    }
+                }
+            });
+        }
+
+        function stepHeroCarousel(delta) {
+            const total = heroProductImages.length;
+            if (total === 0) return;
+            currentHeroSlideIndex = (currentHeroSlideIndex + delta + total) % total;
+            updateHeroCarouselUI();
+        }
+
+        function goToHeroSlide(index) {
+            currentHeroSlideIndex = index;
+            updateHeroCarouselUI();
+            startHeroAutoSlide();
+        }
+
+        function startHeroAutoSlide() {
+            stopHeroAutoSlide();
+            heroAutoSlideTimer = setInterval(() => {
+                stepHeroCarousel(1);
+            }, 3000);
+        }
+
+        function stopHeroAutoSlide() {
+            if (heroAutoSlideTimer) {
+                clearInterval(heroAutoSlideTimer);
+                heroAutoSlideTimer = null;
+            }
+        }
+
+        function pauseHeroAutoSlide() {
+            stopHeroAutoSlide();
+        }
+
+        function resumeHeroAutoSlide() {
+            startHeroAutoSlide();
+        }
+
+        function handleHeroTouchStart(e) {
+            pauseHeroAutoSlide();
+            if (e.touches && e.touches[0]) {
+                heroTouchStartX = e.touches[0].clientX;
+            }
+        }
+
+        function handleHeroTouchEnd(e) {
+            if (e.changedTouches && e.changedTouches[0]) {
+                const diff = heroTouchStartX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 35) {
+                    stepHeroCarousel(diff > 0 ? 1 : -1);
+                }
+            }
+            resumeHeroAutoSlide();
+        }
+
+        // =====================================================================
+        // CHỌN GÓI MẬT MÍA, TÍNH TIỀN TỰ ĐỘNG & NGĂN KÉO GIỎ HÀNG
+        // =====================================================================
+        function selectBundleTier(liters) {
+            const parsed = Math.max(1, Math.min(500, parseInt(liters, 10) || 3));
+            selectedLiters = parsed;
+            if (parsed >= 4) {
+                customBulkLiters = parsed;
+            }
+            updateAllOrderUI();
+        }
+
+        function stepSelectedLiters(delta) {
+            const nextVal = Math.max(1, Math.min(500, selectedLiters + delta));
+            selectBundleTier(nextVal);
+        }
+
+        function handleDirectLiterInput(val) {
+            const num = parseInt(val, 10);
+            if (!isNaN(num) && num >= 1 && num <= 500) {
+                selectedLiters = num;
+                if (num >= 4) customBulkLiters = num;
+                updateAllOrderUI(true);
+            }
+        }
+
+        function handleDirectLiterBlur(val) {
+            const num = parseInt(val, 10);
+            if (isNaN(num) || num < 1) {
+                selectBundleTier(1);
+            } else if (num > 500) {
+                selectBundleTier(500);
+            } else {
+                selectBundleTier(num);
+            }
+        }
+
+        function updateAllOrderUI(skipInputUpdate = false) {
+            const info = computeOrder(selectedLiters);
+            const bulkInfo = computeOrder(customBulkLiters);
+
+            // Highlight thẻ gói đang chọn (1, 2, 3 hoặc Tùy chọn >= 4)
+            const activeTier = selectedLiters <= 3 ? selectedLiters : 'bulk';
+            [1, 2, 3, 'bulk'].forEach((tierKey) => {
+                const card = document.getElementById('tier-card-' + tierKey);
+                const radio = document.getElementById('tier-radio-' + tierKey);
+                if (!card || !radio) return;
+                const dot = radio.querySelector('div');
+                const isSelected = tierKey === activeTier;
+
+                if (isSelected) {
+                    card.classList.remove('border-slate-200', 'bg-white');
+                    card.classList.add('border-cane-800', 'bg-sugarcane-light');
+                    radio.classList.remove('border-slate-400');
+                    radio.classList.add('border-cane-800');
+                    if (dot) dot.classList.remove('hidden');
+                } else {
+                    card.classList.remove('border-cane-800', 'bg-sugarcane-light');
+                    card.classList.add('border-slate-200', 'bg-white');
+                    radio.classList.remove('border-cane-800');
+                    radio.classList.add('border-slate-400');
+                    if (dot) dot.classList.add('hidden');
+                }
+            });
+
+            // Cập nhật thông tin gói Mua Nhiều (>= 4 Lít)
+            const bulkCountEl = document.getElementById('bulk-liter-count');
+            const bulkWeightEl = document.getElementById('bulk-weight-label');
+            const bulkPriceEl = document.getElementById('bulk-price-label');
+            if (bulkCountEl) bulkCountEl.textContent = `${bulkInfo.liters} Lít`;
+            if (bulkWeightEl) bulkWeightEl.textContent = bulkInfo.weight;
+            if (bulkPriceEl) bulkPriceEl.textContent = formatMoney(bulkInfo.subtotal);
+
+            // Cập nhật CTA chính & Thanh ghim dưới đáy điện thoại (Sticky Bottom Bar)
+            const shipNote = info.ship === 0 ? 'Miễn Phí Ship' : `Tổng ${formatMoney(info.total)}`;
+            const ctaLabel = document.getElementById('cta-total-label');
+            if (ctaLabel) {
+                ctaLabel.textContent = `${info.liters} Lít (~${info.weight}) — ${formatMoney(info.total)} (${shipNote})`;
+            }
+            const mobileBarPrice = document.getElementById('mobile-bar-price');
+            if (mobileBarPrice) {
+                mobileBarPrice.textContent = formatMoney(info.total);
+            }
+            const mobileBarLiters = document.getElementById('mobile-bar-liters-badge');
+            if (mobileBarLiters) {
+                mobileBarLiters.textContent = `${info.liters} Lít`;
+            }
+            const mobileBarShip = document.getElementById('mobile-bar-ship-badge');
+            if (mobileBarShip) {
+                mobileBarShip.textContent = info.ship === 0 ? '✓ Freeship' : '+25k ship';
+                mobileBarShip.className = info.ship === 0
+                    ? 'text-[10px] font-extrabold text-emerald-700 truncate'
+                    : 'text-[10px] font-semibold text-slate-500 truncate';
+            }
+            const headerCartBadge = document.getElementById('header-cart-badge');
+            if (headerCartBadge) {
+                headerCartBadge.textContent = `${info.liters}L`;
+            }
+
+            // Cập nhật ô nhập số Lít trực tiếp và dòng phụ bên dưới
+            if (!skipInputUpdate) {
+                const freeInput = document.getElementById('free-liter-input');
+                if (freeInput) freeInput.value = info.liters;
+            }
+            const stepperSub = document.getElementById('stepper-sub-info');
+            if (stepperSub) {
+                stepperSub.textContent = info.ship === 0
+                    ? `~${info.weight} • Miễn phí ship toàn quốc`
+                    : `~${info.weight} • Phí ship 25.000đ (Từ 3 Lít Freeship)`;
+                stepperSub.className = info.ship === 0
+                    ? 'text-[11px] font-semibold text-emerald-700 mt-0.5 truncate'
+                    : 'text-[11px] font-semibold text-slate-600 mt-0.5 truncate';
+            }
+
+            // Cập nhật 1 Ô HIỂN THỊ SỐ DUY NHẤT (nhảy số trực tiếp khi chọn lượng mật ở dưới)
+            const liveBadge = document.getElementById('live-dynamic-liter-badge');
+            const liveLitersNum = document.getElementById('live-badge-liters-num');
+            const liveDetailText = document.getElementById('live-badge-detail-text');
+            const liveShipTag = document.getElementById('live-badge-ship-tag');
+            if (liveLitersNum) {
+                liveLitersNum.textContent = `${info.liters} Lít`;
+            }
+            if (liveDetailText) {
+                liveDetailText.textContent = `(~${info.weight} — ${formatMoney(info.subtotal)})`;
+            }
+            if (liveShipTag) {
+                if (info.ship === 0) {
+                    liveShipTag.textContent = 'FREESHIP';
+                    liveShipTag.className = 'px-2.5 py-1 rounded-xl text-[10.5px] font-extrabold uppercase bg-amber-400 text-slate-950 shrink-0 whitespace-nowrap';
+                } else {
+                    liveShipTag.textContent = '+25k ship';
+                    liveShipTag.className = 'px-2.5 py-1 rounded-xl text-[10.5px] font-bold bg-white/15 text-amber-200 shrink-0 whitespace-nowrap';
+                }
+            }
+            if (liveBadge) {
+                liveBadge.classList.remove('number-pop-anim');
+                void liveBadge.offsetWidth;
+                liveBadge.classList.add('number-pop-anim');
+            }
+
+            // Cập nhật bảng tóm tắt đơn hàng trong khung Đặt Hàng Nhanh
+            const sumQty = document.getElementById('order-summary-qty');
+            const sumSub = document.getElementById('order-summary-sub');
+            const sumShip = document.getElementById('order-summary-ship');
+            const sumTotal = document.getElementById('order-summary-total');
+            if (sumQty) sumQty.textContent = `${info.liters} Lít (~${info.weight})`;
+            if (sumSub) sumSub.textContent = formatMoney(info.subtotal);
+            if (sumShip) {
+                sumShip.textContent = info.ship === 0 ? 'MIỄN PHÍ SHIP (0đ)' : '25.000đ';
+                sumShip.className = info.ship === 0 ? 'text-emerald-700 font-extrabold' : 'text-slate-900 font-bold';
+            }
+            if (sumTotal) sumTotal.textContent = formatMoney(info.total);
+
+            // Cập nhật dòng xem trước nội dung tin nhắn Zalo tự động copy
+            const previewPill = document.getElementById('zalo-preview-pill-text');
+            if (previewPill) {
+                const shipLabel = info.ship === 0 ? 'Miễn phí ship' : 'Gồm 25k ship';
+                previewPill.textContent = `Đặt ${info.liters} Lít Mật Mía Nghệ An (~${info.weight}) - Tổng thanh toán: ${formatMoney(info.total)} (${shipLabel})`;
+            }
+
+            // Cập nhật Ngăn kéo giỏ hàng
+            const drawerTitle = document.getElementById('drawer-pkg-title');
+            const drawerWeight = document.getElementById('drawer-pkg-weight');
+            const drawerCount = document.getElementById('drawer-liter-count');
+            const drawerSub = document.getElementById('drawer-subtotal');
+            const drawerShip = document.getElementById('drawer-ship');
+            const drawerTotal = document.getElementById('drawer-total');
+            if (drawerTitle) drawerTitle.textContent = `Mật Mía Nghệ An (${info.liters} Lít)`;
+            if (drawerWeight) drawerWeight.textContent = `Khối lượng: ~${info.weight}`;
+            if (drawerCount) drawerCount.textContent = `${info.liters} Lít`;
+            if (drawerSub) drawerSub.textContent = formatMoney(info.subtotal);
+            if (drawerShip) drawerShip.textContent = info.ship === 0 ? 'MIỄN PHÍ SHIP (0đ)' : '25.000đ';
+            if (drawerTotal) drawerTotal.textContent = formatMoney(info.total);
+        }
+
+        function scrollToOrderSection() {
+            const section = document.getElementById('order-section');
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function openCartDrawer() {
+            const drawer = document.getElementById('cart-drawer');
+            const backdrop = document.getElementById('cart-drawer-backdrop');
+            if (backdrop) backdrop.classList.remove('hidden');
+            if (drawer) drawer.classList.remove('translate-x-full');
+        }
+
+        function closeCartDrawer() {
+            const drawer = document.getElementById('cart-drawer');
+            const backdrop = document.getElementById('cart-drawer-backdrop');
+            if (drawer) drawer.classList.add('translate-x-full');
+            if (backdrop) backdrop.classList.add('hidden');
+        }
+
+        // =====================================================================
+        // CẤU HÌNH CHỦ SHOP (ẨN TUYỆT ĐỐI KHỎI KHÁCH HÀNG) & XUẤT FILE WEB (.HTML)
+        // =====================================================================
+        let secretAdminTapCount = 0;
+        let secretAdminTapTimer = null;
+
+        function toggleCustomerPreviewMode(hideAdmin) {
+            document.querySelectorAll('.owner-edit-btn').forEach(el => {
+                if (hideAdmin) {
+                    el.classList.add('hidden');
+                    el.style.setProperty('display', 'none', 'important');
+                } else {
+                    el.classList.remove('hidden');
+                    el.style.removeProperty('display');
+                }
+            });
+        }
+
+        function handleSecretAdminTap() {
+            secretAdminTapCount++;
+            if (secretAdminTapTimer) clearTimeout(secretAdminTapTimer);
+            secretAdminTapTimer = setTimeout(() => {
+                secretAdminTapCount = 0;
+            }, 1800);
+
+            if (secretAdminTapCount >= 5) {
+                secretAdminTapCount = 0;
+                const banner = document.getElementById('email-test-banner');
+                const isCurrentlyHidden = !banner || banner.classList.contains('hidden');
+                toggleCustomerPreviewMode(!isCurrentlyHidden);
+                if (isCurrentlyHidden && banner) {
+                    banner.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                }
+            }
+        }
+
+        window.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
+                e.preventDefault();
+                const banner = document.getElementById('email-test-banner');
+                const isCurrentlyHidden = !banner || banner.classList.contains('hidden');
+                toggleCustomerPreviewMode(!isCurrentlyHidden);
+                if (isCurrentlyHidden && banner) {
+                    banner.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                }
+            }
+        });
+
+        function getSavedWeb3FormsKey() {
+            const input = document.getElementById('web3forms-key-input');
+            if (input && input.value.trim()) {
+                return input.value.trim();
+            }
+            try {
+                return (localStorage.getItem('MatMiaWeb3FormsKey') || EMBEDDED_WEB3FORMS_KEY || '').trim();
+            } catch (e) {
+                return EMBEDDED_WEB3FORMS_KEY;
+            }
+        }
+
+        function getSavedTelegramConfig() {
+            const tInput = document.getElementById('tg-bot-token-input');
+            const cInput = document.getElementById('tg-chat-id-input');
+            let token = tInput && tInput.value.trim() ? tInput.value.trim() : '';
+            let chatId = cInput && cInput.value.trim() ? cInput.value.trim() : '';
+            try {
+                if (!token) token = (localStorage.getItem('MatMiaTgToken') || EMBEDDED_TG_BOT_TOKEN || '').trim();
+                if (!chatId) chatId = (localStorage.getItem('MatMiaTgChatId') || EMBEDDED_TG_CHAT_ID || '').trim();
+            } catch (e) {}
+            return { token, chatId };
+        }
+
+        function saveWeb3FormsKeyAndTest() {
+            const input = document.getElementById('web3forms-key-input');
+            const key = input ? input.value.trim() : '';
+            const tg = getSavedTelegramConfig();
+
+            try {
+                if (key) localStorage.setItem('MatMiaWeb3FormsKey', key);
+                if (tg.token) localStorage.setItem('MatMiaTgToken', tg.token);
+                if (tg.chatId) localStorage.setItem('MatMiaTgChatId', tg.chatId);
+            } catch (e) {}
+
+            runAutoOrManualTestOrder(true);
+        }
+
+        function exportCleanCustomerHtml() {
+            const web3Key = getSavedWeb3FormsKey();
+            const tg = getSavedTelegramConfig();
+            let mp4Url = '';
+            try {
+                mp4Url = (localStorage.getItem('MatMiaDirectMp4Url') || EMBEDDED_DIRECT_MP4_URL || '').trim();
+            } catch (e) {}
+
+            const qImg1 = getSavedQualityCardImage(1);
+            const qImg2 = getSavedQualityCardImage(2);
+            const qImg3 = getSavedQualityCardImage(3);
+            const qImg4 = getSavedQualityCardImage(4);
+
+            toggleCustomerPreviewMode(true);
+
+            // Tạo bản sao DOM sạch để xóa vĩnh viễn bảng cấu hình chủ shop khi xuất file cho khách
+            const cloneDoc = document.documentElement.cloneNode(true);
+            cloneDoc.querySelectorAll('#email-test-banner, .owner-edit-btn, #inline-mp4-url-popover, #local-mp4-file-input').forEach(el => el.remove());
+
+            let htmlContent = '<!DOCTYPE html>\n' + cloneDoc.outerHTML;
+
+            htmlContent = htmlContent.replace(
+                /const EMBEDDED_WEB3FORMS_KEY = '[^']*';/,
+                `const EMBEDDED_WEB3FORMS_KEY = '${web3Key.replace(/'/g, "\\'")}';`
+            );
+            htmlContent = htmlContent.replace(
+                /const EMBEDDED_TG_BOT_TOKEN = '[^']*';/,
+                `const EMBEDDED_TG_BOT_TOKEN = '${tg.token.replace(/'/g, "\\'")}';`
+            );
+            htmlContent = htmlContent.replace(
+                /const EMBEDDED_TG_CHAT_ID = '[^']*';/,
+                `const EMBEDDED_TG_CHAT_ID = '${tg.chatId.replace(/'/g, "\\'")}';`
+            );
+            htmlContent = htmlContent.replace(
+                /const EMBEDDED_DIRECT_MP4_URL = '[^']*';/,
+                `const EMBEDDED_DIRECT_MP4_URL = '${mp4Url.replace(/'/g, "\\'")}';`
+            );
+            htmlContent = htmlContent.replace(
+                /const EMBEDDED_QUALITY_IMG_1 = '[^']*';/,
+                `const EMBEDDED_QUALITY_IMG_1 = '${qImg1.replace(/'/g, "\\'")}';`
+            );
+            htmlContent = htmlContent.replace(
+                /const EMBEDDED_QUALITY_IMG_2 = '[^']*';/,
+                `const EMBEDDED_QUALITY_IMG_2 = '${qImg2.replace(/'/g, "\\'")}';`
+            );
+            htmlContent = htmlContent.replace(
+                /const EMBEDDED_QUALITY_IMG_3 = '[^']*';/,
+                `const EMBEDDED_QUALITY_IMG_3 = '${qImg3.replace(/'/g, "\\'")}';`
+            );
+            htmlContent = htmlContent.replace(
+                /const EMBEDDED_QUALITY_IMG_4 = '[^']*';/,
+                `const EMBEDDED_QUALITY_IMG_4 = '${qImg4.replace(/'/g, "\\'")}';`
+            );
+
+            const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'mat-mia-nghe-an-index.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // =====================================================================
+        // ĐẨY ĐƠN HÀNG TỰ ĐỘNG VỀ GMAIL MAIKOTY003@GMAIL.COM & TELEGRAM
+        // =====================================================================
+        async function sendOrderEmailToOwner(orderRecord, isTestOrder = false) {
+            const shipText = orderRecord.ship === 0 ? 'MIỄN PHÍ VẬN CHUYỂN (0đ)' : '25.000đ';
+            const prefix = isTestOrder ? '🔔 [ĐƠN TEST] ' : '📦 [ĐƠN MẬT MÍA MỚI] ';
+            const subjectLine = `${prefix}${orderRecord.code} - ${orderRecord.name} (${orderRecord.phone}) - ${orderRecord.liters} Lít`;
+
+            let sentSuccess = false;
+            let providerUsed = '';
+            let detailMsg = '';
+
+            // 1. Bắn qua Telegram Bot API nếu có cấu hình
+            const tg = getSavedTelegramConfig();
+            if (tg.token && tg.chatId) {
+                try {
+                    const tgText = `${prefix}\n` +
+                        `━━━━━━━━━━━━━━━\n` +
+                        `• Mã đơn: ${orderRecord.code}\n` +
+                        `• Thời gian: ${orderRecord.time}\n` +
+                        `• Khách hàng: ${orderRecord.name}\n` +
+                        `• SĐT: ${orderRecord.phone}\n` +
+                        `• Địa chỉ: ${orderRecord.address}\n` +
+                        `• Số lượng: ${orderRecord.liters} Lít (~${orderRecord.weight})\n` +
+                        `• Phí ship: ${shipText}\n` +
+                        `• TỔNG THU: ${formatMoney(orderRecord.total)}\n` +
+                        `• Ghi chú: ${orderRecord.note || 'Không có'}`;
+                    const tgRes = await fetch(`https://api.telegram.org/bot${tg.token}/sendMessage`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            chat_id: tg.chatId,
+                            text: tgText
+                        })
+                    });
+                    const tgData = await tgRes.json();
+                    if (tgData && tgData.ok) {
+                        sentSuccess = true;
+                        providerUsed = 'Telegram Bot';
+                        detailMsg = 'Đã nổ thông báo đơn hàng trên Telegram!';
+                    }
+                } catch (e) {}
+            }
+
+            // 2. Bắn về Gmail maikoty003@gmail.com qua Web3Forms API
+            const web3Key = getSavedWeb3FormsKey();
+            if (web3Key) {
+                try {
+                    const w3Payload = {
+                        access_key: web3Key,
+                        subject: subjectLine,
+                        from_name: 'HM - Mật Mía Nghệ An',
+                        'Mã Đơn Hàng': orderRecord.code,
+                        'Thời Gian Đặt': orderRecord.time,
+                        'Khách Hàng': orderRecord.name,
+                        'Số Điện Thoại': orderRecord.phone,
+                        'Địa Chỉ Nhận Hàng': orderRecord.address,
+                        'Số Lượng Mật': `${orderRecord.liters} Lít (~${orderRecord.weight})`,
+                        'Tiền Mật': formatMoney(orderRecord.subtotal),
+                        'Phí Vận Chuyển': shipText,
+                        'Tổng Thanh Toán': `${formatMoney(orderRecord.total)} (${orderRecord.ship === 0 ? 'MIỄN PHÍ SHIP' : 'Cả ship'})`,
+                        'Ghi Chú': orderRecord.note ? orderRecord.note : 'Không có'
+                    };
+                    const w3Res = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify(w3Payload)
+                    });
+                    const w3Data = await w3Res.json();
+                    if (w3Data && w3Data.success) {
+                        return {
+                            ok: true,
+                            provider: providerUsed ? `${providerUsed} + Web3Forms Gmail` : 'Web3Forms Gmail',
+                            message: 'Đã gửi đơn thành công về hộp thư maikoty003@gmail.com!'
+                        };
+                    } else if (w3Data && w3Data.message) {
+                        detailMsg = w3Data.message;
+                    }
+                } catch (e) {}
+            }
+
+            if (sentSuccess) {
+                return { ok: true, provider: providerUsed, message: detailMsg };
+            }
+
+            // 3. Dự phòng: Gửi qua FormSubmit AJAX
+            const endpoint = `https://formsubmit.co/ajax/${SHOP_OWNER_EMAIL}`;
+            const payload = {
+                _subject: subjectLine,
+                _template: 'table',
+                _captcha: 'false',
+                'Mã_Đơn_Hàng': orderRecord.code,
+                'Thời_Gian_Đặt': orderRecord.time,
+                'Khách_Hàng': orderRecord.name,
+                'Số_Điện_Thoại': orderRecord.phone,
+                'Địa_Chỉ_Nhận_Hàng': orderRecord.address,
+                'Số_Lượng_Mật': `${orderRecord.liters} Lít (~${orderRecord.weight})`,
+                'Tiền_Mật': formatMoney(orderRecord.subtotal),
+                'Phí_Vận_Chuyển': shipText,
+                'Tổng_Thanh_Toán': `${formatMoney(orderRecord.total)} (${orderRecord.ship === 0 ? 'MIỄN PHÍ SHIP' : 'Cả ship'})`,
+                'Ghi_Chú': orderRecord.note ? orderRecord.note : 'Không có'
+            };
+
+            try {
+                const res = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(payload),
+                    referrerPolicy: 'origin'
+                });
+                const data = await res.json();
+                const isSuccess = data && (data.success === true || data.success === 'true');
+                return {
+                    ok: isSuccess,
+                    provider: 'FormSubmit',
+                    message: (data && data.message) ? String(data.message) : 'Phản hồi từ FormSubmit'
+                };
+            } catch (err) {
+                return {
+                    ok: false,
+                    provider: 'FormSubmit',
+                    message: detailMsg || 'Hãy dán mã Access Key Web3Forms (vừa tạo với localhost) vào ô trên để bắn đơn về maikoty003@gmail.com ngay lập tức!'
+                };
+            }
+        }
+
+        async function runAutoOrManualTestOrder() {
+            const badge = document.getElementById('email-test-badge');
+            const msg = document.getElementById('email-test-message');
+            if (badge) {
+                badge.className = 'inline-flex items-center px-2.5 py-1 rounded-full font-extrabold text-[10px] uppercase bg-amber-400 text-slate-950 shrink-0';
+                badge.textContent = 'Đang bắn đơn test...';
+            }
+            if (msg) {
+                msg.innerHTML = 'Đang gửi đơn hàng test <strong>#MM-TEST01 (3 Lít = 135.000đ)</strong> về <strong>maikoty003@gmail.com</strong>...';
+            }
+
+            const now = new Date();
+            const testOrder = {
+                code: '#MM-TEST01',
+                time: now.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' }) + ' ' + now.toLocaleDateString('vi-VN'),
+                name: 'Khách Đặt Thử (Test Hệ Thống)',
+                phone: '0375.013.878',
+                address: 'TP. Vinh, Nghệ An',
+                note: 'Đơn test kiểm tra kết nối Gmail maikoty003@gmail.com',
+                liters: 3,
+                weight: '4,32 kg',
+                subtotal: 135000,
+                ship: 0,
+                total: 135000
+            };
+
+            const result = await sendOrderEmailToOwner(testOrder, true);
+            if (result && result.ok) {
+                if (badge) {
+                    badge.className = 'inline-flex items-center px-2.5 py-1 rounded-full font-extrabold text-[10px] uppercase bg-emerald-600 text-white shrink-0';
+                    badge.textContent = '✓ ĐÃ GỬI VỀ GMAIL';
+                }
+                if (msg) {
+                    msg.innerHTML = `<strong class="text-emerald-800">Thành công (${result.provider})!</strong> Đơn test <strong>#MM-TEST01</strong> đã được đẩy về <strong>maikoty003@gmail.com</strong>.`;
+                }
+            } else {
+                if (badge) {
+                    badge.className = 'inline-flex items-center px-2.5 py-1 rounded-full font-extrabold text-[10px] uppercase bg-amber-500 text-slate-950 shrink-0';
+                    badge.textContent = 'Chờ dán Access Key';
+                }
+                if (msg) {
+                    msg.innerHTML = `Bạn hãy copy mã <strong>Access Key</strong> trên Web3Forms (với URL = <code>localhost</code>) dán vào ô bên dưới rồi bấm <strong>"Lưu Mã & Test"</strong> để đơn đổ thẳng về <strong>maikoty003@gmail.com</strong>!`;
+                }
+            }
+        }
+
+        function triggerManualTestOrder() {
+            saveWeb3FormsKeyAndTest();
+        }
+
+        let latestZaloOrderMessage = '';
+
+        function formatZaloOrderMessage(orderRecord) {
+            const shipText = orderRecord.ship === 0 ? 'MIỄN PHÍ SHIP (0đ)' : '25.000đ';
+            return [
+                `📦 ĐẶT MẬT MÍA NGHỆ AN (${orderRecord.code})`,
+                `• Số lượng đặt: ${orderRecord.liters} Lít (~${orderRecord.weight})`,
+                `• Tiền mật (45.000đ/Lít): ${formatMoney(orderRecord.subtotal)}`,
+                `• Phí vận chuyển: ${shipText}`,
+                `• TỔNG THANH TOÁN KHI NHẬN HÀNG: ${formatMoney(orderRecord.total)}`,
+                `👉 Shop tư vấn và lên đơn giúp mình nhé!`
+            ].filter(Boolean).join('\n');
+        }
+
+        function copyTextToClipboardFallback(text) {
+            if (!text) return false;
+            try {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'fixed';
+                ta.style.top = '-9999px';
+                ta.style.left = '-9999px';
+                document.body.appendChild(ta);
+                ta.focus();
+                ta.select();
+                ta.setSelectionRange(0, text.length);
+                const copied = document.execCommand('copy');
+                document.body.removeChild(ta);
+                return copied;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        function buildCurrentSelectionOrderRecord(channelLabel = 'Đặt trực tiếp qua Zalo') {
+            const info = computeOrder(selectedLiters);
+            const now = new Date();
+            return {
+                code: '#MM' + Math.floor(1000 + Math.random() * 9000),
+                time: now.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' }) + ' ' + now.toLocaleDateString('vi-VN'),
+                name: channelLabel,
+                phone: 'Liên hệ qua Zalo/SĐT',
+                address: 'Trao đổi trực tiếp qua Zalo / Điện thoại',
+                note: `Khách chọn gói ${info.liters} Lít (~${info.weight}) trên web`,
+                liters: info.liters,
+                weight: info.weight,
+                subtotal: info.subtotal,
+                ship: info.ship,
+                total: info.total
+            };
+        }
+
+        function copyCurrentSelectionOrderText(showInlineFeedback = false) {
+            const tempRecord = buildCurrentSelectionOrderRecord('Đặt qua Zalo 0375.013.878');
+            latestZaloOrderMessage = formatZaloOrderMessage(tempRecord);
+            copyTextToClipboardFallback(latestZaloOrderMessage);
+            if (showInlineFeedback) {
+                const btn = document.getElementById('inline-quick-copy-btn');
+                if (btn) {
+                    const oldText = btn.textContent;
+                    btn.textContent = '✓ Đã chép';
+                    setTimeout(() => {
+                        btn.textContent = oldText;
+                    }, 2000);
+                }
+            }
+            return tempRecord;
+        }
+
+        function copyLatestOrderForZalo(showFeedback = false) {
+            if (!latestZaloOrderMessage) {
+                copyCurrentSelectionOrderText(false);
+            } else {
+                copyTextToClipboardFallback(latestZaloOrderMessage);
+            }
+            if (showFeedback) {
+                const btn = document.getElementById('copy-zalo-order-btn');
+                if (btn) {
+                    const oldText = btn.textContent;
+                    btn.textContent = '✓ Đã sao chép! Hãy dán vào Zalo 0375.013.878';
+                    setTimeout(() => {
+                        btn.textContent = oldText;
+                    }, 2500);
+                }
+            }
+        }
+
+        function handleDirectZaloOrder() {
+            const orderRecord = copyCurrentSelectionOrderText(false);
+            const zaloUrl = `https://zalo.me/${SHOP_OWNER_ZALO_PHONE}`;
+            const zaloLinkEl = document.getElementById('thankyou-zalo-direct-link');
+            if (zaloLinkEl) {
+                zaloLinkEl.href = zaloUrl;
+            }
+            const openedWindow = window.open(zaloUrl, '_blank');
+
+            const box = document.getElementById('thankyou-summary-box');
+            if (box) {
+                box.innerHTML = `
+                    <div class="bg-emerald-50 border border-emerald-300 text-emerald-900 rounded-xl px-3 py-2 text-[11px] font-bold mb-2 flex items-center gap-2">
+                        <span class="text-emerald-600 text-sm">✓</span>
+                        <span>Đã sao chép sẵn số lượng & giá! Bạn chỉ cần <strong>Dán (Paste)</strong> vào khung chat Zalo <strong>0375.013.878</strong>.</span>
+                    </div>
+                    <div class="flex justify-between border-b border-cane-200/70 pb-1.5">
+                        <span class="text-slate-500">Mã đơn tạm tính:</span>
+                        <strong class="text-cane-900">${orderRecord.code}</strong>
+                    </div>
+                    <div class="flex justify-between pt-1">
+                        <span class="text-slate-500">Số lượng mật mía:</span>
+                        <strong class="text-cane-900">${orderRecord.liters} Lít (~${orderRecord.weight})</strong>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-500">Tiền mật (45.000đ/Lít):</span>
+                        <strong class="text-slate-900">${formatMoney(orderRecord.subtotal)}</strong>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-500">Phí vận chuyển:</span>
+                        <strong class="text-emerald-700">${orderRecord.ship === 0 ? 'MIỄN PHÍ SHIP (0đ)' : '25.000đ'}</strong>
+                    </div>
+                    <div class="flex justify-between border-t border-cane-200/70 pt-1.5 items-baseline">
+                        <span class="font-bold text-cane-950">Tổng thanh toán khi nhận hàng:</span>
+                        <strong class="text-base text-red-600">${formatMoney(orderRecord.total)}</strong>
+                    </div>
+                `;
+            }
+
+            const modal = document.getElementById('thankyou-modal');
+            if (modal) modal.classList.remove('hidden');
+
+            sendOrderEmailToOwner(orderRecord, false).catch(() => {});
+
+            if (!openedWindow) {
+                setTimeout(() => {
+                    window.location.href = zaloUrl;
+                }, 600);
+            }
+        }
+
+        function handleDirectPhoneOrder() {
+            const orderRecord = buildCurrentSelectionOrderRecord('Khách bấm Gọi Điện 0375.013.878');
+            latestZaloOrderMessage = formatZaloOrderMessage(orderRecord);
+            copyTextToClipboardFallback(latestZaloOrderMessage);
+            sendOrderEmailToOwner(orderRecord, false).catch(() => {});
+        }
+
+        function closeThankYouModal() {
+            const modal = document.getElementById('thankyou-modal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        // =====================================================================
+        // CAROUSEL NHẬN XÉT CỦA KHÁCH HÀNG (CHẠY NGANG TỰ ĐỘNG ĐỘ TRỄ 3 GIÂY)
+        // =====================================================================
+        function createVietnameseWomanFallbackAvatar(bgHex, accentHex, hairHex) {
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+                <rect width="120" height="120" rx="60" fill="${bgHex}"/>
+                <circle cx="60" cy="60" r="56" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+                <path d="M26 108 C28 84 42 75 60 75 C78 75 92 84 94 108 Z" fill="${accentHex}"/>
+                <path d="M46 75 L60 92 L74 75 Z" fill="#ffffff" opacity="0.85"/>
+                <path d="M30 56 C30 30 43 18 60 18 C77 18 90 30 90 56 C90 72 84 84 78 88 C77 74 70 68 60 68 C50 68 43 74 42 88 C36 84 30 72 30 56 Z" fill="${hairHex}"/>
+                <ellipse cx="60" cy="52" rx="20" ry="23" fill="#fde2cc"/>
+                <path d="M38 45 C42 29 56 26 68 30 C76 33 81 39 81 47 C74 41 64 38 53 40 C46 41 41 43 38 45 Z" fill="${hairHex}"/>
+                <circle cx="52" cy="52" r="2.1" fill="#2d1b12"/>
+                <circle cx="68" cy="52" r="2.1" fill="#2d1b12"/>
+                <path d="M48 46 Q52 43 56 46" fill="none" stroke="#3d2518" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M64 46 Q68 43 72 46" fill="none" stroke="#3d2518" stroke-width="1.6" stroke-linecap="round"/>
+                <ellipse cx="47" cy="58" rx="4" ry="2.2" fill="#f4978e" opacity="0.55"/>
+                <ellipse cx="73" cy="58" rx="4" ry="2.2" fill="#f4978e" opacity="0.55"/>
+                <path d="M54 62 Q60 67 66 62" fill="none" stroke="#d9464f" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>`;
+            return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+        }
+
+        const messengerReviews = [
+            {
+                name: 'Chị Nguyễn Thị Hương',
+                subtitle: 'Quê Nghệ An • Đã mua 3 Lít',
+                tag: 'Đã nhận hàng',
+                avatar: 'https://i.postimg.cc/hjmqJJzF/500706344-1048554990706926-4574525630266514337-n.jpg',
+                photo: 'https://i.postimg.cc/hjmqJJzF/500706344-1048554990706926-4574525630266514337-n.jpg',
+                fallbackAvatar: createVietnameseWomanFallbackAvatar('#fce7f3', '#be185d', '#1f1614'),
+                quote: '“Mật sánh đặc quyện màu đẹp, ngọt thanh mà thơm nức mùi mật quê Nghệ An!”'
+            },
+            {
+                name: 'Chị Trần Thu Thủy',
+                subtitle: 'Hà Nội • Đã mua 3 Lít',
+                tag: 'Khen nức nở',
+                avatar: 'https://i.postimg.cc/zBh1LLbY/500709539-1048554907373601-1236713871466323486-n.jpg',
+                photo: 'https://i.postimg.cc/zBh1LLbY/500709539-1048554907373601-1236713871466323486-n.jpg',
+                fallbackAvatar: createVietnameseWomanFallbackAvatar('#e0f2fe', '#0369a1', '#1c1512'),
+                quote: '“Chị rất kỹ tính nhưng nhận mật nhà em là ưng bụng tuyệt đối, ngồi khen mãi thôi!”'
+            },
+            {
+                name: 'Chị Lê Thanh Mai',
+                subtitle: 'TP. Vinh • Đã mua 5 Lít',
+                tag: 'Khách khen lắm',
+                avatar: 'https://i.postimg.cc/76zyCCGy/500772466-1048555004040258-8890815577452057682-n.jpg',
+                photo: 'https://i.postimg.cc/76zyCCGy/500772466-1048555004040258-8890815577452057682-n.jpg',
+                fallbackAvatar: createVietnameseWomanFallbackAvatar('#dcfce7', '#15803d', '#221712'),
+                quote: '“Mật nhà em quá tuyệt vời luôn, kho cá hay làm bánh khách nhà chị ai cũng khen!”'
+            },
+            {
+                name: 'Chị Phạm Bích Ngọc',
+                subtitle: 'Đà Nẵng • Đã mua 3 Lít',
+                tag: 'Mật đặc đẹp',
+                avatar: 'https://i.postimg.cc/j5frWWwb/501012087-1048554970706928-1022482529416579343-n.jpg',
+                photo: 'https://i.postimg.cc/j5frWWwb/501012087-1048554970706928-1022482529416579343-n.jpg',
+                fallbackAvatar: createVietnameseWomanFallbackAvatar('#fef3c7', '#b45309', '#1b1310'),
+                quote: '“Mật đặc sánh, màu hổ phách đẹp mắt, dùng hết chị lại nhắn ủng hộ tiếp nhé!”'
+            },
+            {
+                name: 'Chị Hoàng Minh Phương',
+                subtitle: 'Thanh Hóa • Đã mua 4 Lít',
+                tag: 'Mật chuẩn 1,44kg',
+                avatar: 'https://i.postimg.cc/4dcTKK7Z/501601322-1048555000706925-7078215386371331555-n.jpg',
+                photo: 'https://i.postimg.cc/4dcTKK7Z/501601322-1048555000706925-7078215386371331555-n.jpg',
+                fallbackAvatar: createVietnameseWomanFallbackAvatar('#f3e8ff', '#6d28d9', '#1e1612'),
+                quote: '“Nhận mật rồi nha, mật chuẩn già lửa nặng tay, ăn hết chị giới thiệu bạn bè ủng hộ!”'
+            },
+            {
+                name: 'Chị Vũ Thị Lan Anh',
+                subtitle: 'Hải Phòng • Đã mua 3 Lít',
+                tag: 'Uy tín 100%',
+                avatar: 'https://i.postimg.cc/LXPMqqYS/501699798-1048554910706934-4235943248637184531-n.jpg',
+                photo: 'https://i.postimg.cc/LXPMqqYS/501699798-1048554910706934-4235943248637184531-n.jpg',
+                fallbackAvatar: createVietnameseWomanFallbackAvatar('#ffe4e6', '#be123c', '#1a120e'),
+                quote: '“Mật sánh đặc đúng chuẩn 1,44kg/lít, đem kho cá với chấm bánh chưng cả nhà đều mê!”'
+            },
+            {
+                name: 'Chị Đặng Thu Hà',
+                subtitle: 'TP. Hồ Chí Minh • Đã mua 5 Lít',
+                tag: 'Đóng gói kỹ',
+                avatar: 'https://i.postimg.cc/Ss9pXX2m/502220199-1048554974040261-4499942803057567916-n.jpg',
+                photo: 'https://i.postimg.cc/Ss9pXX2m/502220199-1048554974040261-4499942803057567916-n.jpg',
+                fallbackAvatar: createVietnameseWomanFallbackAvatar('#fef9c3', '#a16207', '#1c1410'),
+                quote: '“Giao vào Sài Gòn nhanh, đóng gói chắc chắn, mật thơm lừng chuẩn vị quê xứ Nghệ!”'
+            }
+        ];
+
+        let currentReviewIndex = 0;
+        let reviewIntervalId = null;
+        let touchStartX = 0;
+
+        function openReviewPhotoModal(imgUrl, captionText) {
+            const modal = document.getElementById('review-lightbox-modal');
+            const imgEl = document.getElementById('review-lightbox-img');
+            const capEl = document.getElementById('review-lightbox-caption');
+            if (!modal || !imgEl) return;
+            imgEl.src = imgUrl;
+            if (capEl) capEl.textContent = captionText || 'Phản hồi thực tế của khách hàng';
+            modal.classList.remove('hidden');
+            pauseReviewAutoSlide();
+        }
+
+        function closeReviewPhotoModal() {
+            const modal = document.getElementById('review-lightbox-modal');
+            if (modal) modal.classList.add('hidden');
+            resumeReviewAutoSlide();
+        }
+
+        function getVisibleReviewCount() {
+            // Hiển thị từng thẻ lớn sắc nét chuẩn màn hình điện thoại
+            return 1;
+        }
+
+        function renderReviewsCarousel() {
+            const track = document.getElementById('reviews-carousel-track');
+            const dots = document.getElementById('reviews-carousel-dots');
+            if (!track || !dots) return;
+
+            track.innerHTML = messengerReviews.map((rev, idx) => {
+                const safeCaption = `${rev.name} (${rev.subtitle})`.replace(/'/g, "\\'");
+                return `
+                    <div class="w-full shrink-0 px-1.5">
+                        <div class="bg-sugarcane-light/50 rounded-3xl border border-cane-200 shadow-2xs p-3.5 h-full flex flex-col justify-between">
+                            <div>
+                                <!-- Header thông tin khách hàng -->
+                                <div class="flex items-center justify-between border-b border-cane-200/70 pb-2.5 mb-2.5 gap-2">
+                                    <div class="flex items-center gap-2.5 min-w-0">
+                                        <div class="relative shrink-0">
+                                            <img src="${rev.avatar}"
+                                                 onerror="this.onerror=null;this.src='${rev.fallbackAvatar}';"
+                                                 alt="${rev.name}"
+                                                 class="w-10 h-10 rounded-full object-cover border-2 border-cane-600 shadow-2xs" />
+                                            <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-white"></span>
+                                        </div>
+                                        <div class="min-w-0">
+                                            <div class="font-extrabold text-[13.5px] text-slate-900 truncate">${rev.name}</div>
+                                            <div class="text-[11px] font-medium text-slate-500 truncate">${rev.subtitle}</div>
+                                        </div>
+                                    </div>
+                                    <span class="text-[10px] font-bold bg-cane-800 text-amber-300 px-2.5 py-0.5 rounded-full shrink-0">${rev.tag}</span>
+                                </div>
+
+                                <!-- Khung ảnh chụp màn hình nhận xét thực tế hiển thị trọn vẹn 100% không bị cắt xén -->
+                                <div onclick="openReviewPhotoModal('${rev.photo}', '${safeCaption}')"
+                                     class="group relative w-full aspect-[3/4] max-h-[370px] rounded-2xl overflow-hidden bg-slate-950 border border-slate-200/90 flex items-center justify-center cursor-zoom-in">
+                                    <img src="${rev.photo}"
+                                         alt=""
+                                         aria-hidden="true"
+                                         class="absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-50 pointer-events-none select-none" />
+                                    <img src="${rev.photo}"
+                                         alt="Nhận xét thực tế của ${rev.name}"
+                                         loading="lazy"
+                                         class="relative z-10 w-full h-full object-contain p-1 transition-transform duration-300" />
+                                    <span class="absolute bottom-2.5 right-2.5 z-20 bg-slate-950/80 text-amber-300 text-[10px] font-bold px-2.5 py-1 rounded-full border border-white/15 backdrop-blur-xs">
+                                        🔍 Chạm phóng to
+                                    </span>
+                                </div>
+
+                                <p class="mt-2.5 text-xs text-slate-700 font-medium leading-relaxed bg-white px-3 py-2 rounded-xl border border-cane-200/80">
+                                    ${rev.quote}
+                                </p>
+                            </div>
+
+                            <div class="mt-2.5 pt-2 border-t border-cane-200/70 flex items-center justify-between text-[11px] font-bold text-cane-800">
+                                <span>✓ Phản hồi thực tế (${idx + 1}/${messengerReviews.length})</span>
+                                <span class="text-amber-500 tracking-wider">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            dots.innerHTML = messengerReviews.map((_, idx) => `
+                <button type="button" onclick="goToReviewSlide(${idx})" id="rev-dot-${idx}"
+                        class="h-2.5 rounded-full transition-all ${idx === 0 ? 'w-7 bg-cane-800' : 'w-2.5 bg-slate-300'}"
+                        aria-label="Slide ${idx + 1}"></button>
+            `).join('');
+
+            updateReviewCarouselPosition();
+        }
+
+        function updateReviewCarouselPosition() {
+            const track = document.getElementById('reviews-carousel-track');
+            if (!track) return;
+            const visible = getVisibleReviewCount();
+            const maxIdx = Math.max(0, messengerReviews.length - visible);
+            if (currentReviewIndex > maxIdx) currentReviewIndex = 0;
+            if (currentReviewIndex < 0) currentReviewIndex = maxIdx;
+
+            const shiftPercent = (currentReviewIndex * 100) / visible;
+            track.style.transform = `translateX(-${shiftPercent}%)`;
+
+            messengerReviews.forEach((_, idx) => {
+                const dot = document.getElementById('rev-dot-' + idx);
+                if (!dot) return;
+                dot.className = idx === currentReviewIndex
+                    ? 'h-2.5 w-7 rounded-full bg-cane-800 transition-all'
+                    : 'h-2.5 w-2.5 rounded-full bg-slate-300 transition-all';
+            });
+        }
+
+        function stepReviewCarousel(delta) {
+            const visible = getVisibleReviewCount();
+            const maxIdx = Math.max(0, messengerReviews.length - visible);
+            currentReviewIndex += delta;
+            if (currentReviewIndex > maxIdx) currentReviewIndex = 0;
+            if (currentReviewIndex < 0) currentReviewIndex = maxIdx;
+            updateReviewCarouselPosition();
+        }
+
+        function goToReviewSlide(idx) {
+            currentReviewIndex = idx;
+            updateReviewCarouselPosition();
+        }
+
+        function startReviewAutoSlide() {
+            stopReviewAutoSlide();
+            reviewIntervalId = setInterval(() => {
+                stepReviewCarousel(1);
+            }, 3000);
+        }
+
+        function stopReviewAutoSlide() {
+            if (reviewIntervalId) {
+                clearInterval(reviewIntervalId);
+                reviewIntervalId = null;
+            }
+        }
+
+        function pauseReviewAutoSlide() {
+            stopReviewAutoSlide();
+        }
+
+        function resumeReviewAutoSlide() {
+            startReviewAutoSlide();
+        }
+
+        function handleReviewTouchStart(e) {
+            pauseReviewAutoSlide();
+            if (e.touches && e.touches[0]) {
+                touchStartX = e.touches[0].clientX;
+            }
+        }
+
+        function handleReviewTouchEnd(e) {
+            if (e.changedTouches && e.changedTouches[0]) {
+                const diff = touchStartX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 40) {
+                    stepReviewCarousel(diff > 0 ? 1 : -1);
+                }
+            }
+            resumeReviewAutoSlide();
+        }
+
+        // =====================================================================
+        // FAQ ACCORDION
+        // =====================================================================
+        const faqItems = [
+            {
+                q: '1. Giá mật mía và cước phí vận chuyển được tính như thế nào?',
+                a: 'Giá mật mía nguyên chất tại lò là 45.000đ/Lít (mỗi lít nặng chuẩn 1,44kg). Khi đặt 1 Lít (45.000đ + 25.000đ ship = 70.000đ) hoặc 2 Lít (90.000đ + 25.000đ ship = 115.000đ). Đặc biệt khi đặt từ 3 Lít trở lên (3L = 135.000đ, 4L = 180.000đ, 5L = 225.000đ, 10L = 450.000đ...) quý khách được MIỄN PHÍ VẬN CHUYỂN 100% toàn quốc.'
+            },
+            {
+                q: '2. Mật mía bảo quản như thế nào để giữ nguyên hương vị cả năm?',
+                a: 'Vì mật được nấu cô đặc già lửa đạt chuẩn 1,44kg/Lít và vớt bọt kỹ nên quý khách chỉ cần đậy kín nắp, để nơi khô ráo thoáng mát ở nhiệt độ phòng (tránh ánh nắng trực tiếp) là giữ nguyên độ sánh thơm suốt 12–18 tháng mà không cần bảo quản tủ lạnh.'
+            },
+            {
+                q: '3. Khi nhận hàng có được mở ra kiểm tra trước khi thanh toán không?',
+                a: 'Hoàn toàn được. Quý khách nhận hàng được kiểm tra đúng chai mật mía Nghệ An nắp đỏ sánh đặc, thơm phức, cân nặng chuẩn 1,44kg/Lít rồi mới thanh toán tiền mặt (COD) cho nhân viên giao hàng.'
+            }
+        ];
+
+        function renderFaqs() {
+            const container = document.getElementById('faq-accordion-list');
+            if (!container) return;
+            container.innerHTML = faqItems.map((item, idx) => `
+                <div class="rounded-xl border border-slate-200 bg-white overflow-hidden">
+                    <button type="button" onclick="toggleFaq(${idx})" class="w-full px-5 py-4 text-left flex items-center justify-between gap-3 font-bold text-sm sm:text-base text-cane-950 hover:bg-slate-50 transition-colors">
+                        <span>${item.q}</span>
+                        <span id="faq-icon-${idx}" class="text-cane-800 font-bold text-lg shrink-0">+</span>
+                    </button>
+                    <div id="faq-ans-${idx}" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3 bg-white">
+                        ${item.a}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function toggleFaq(idx) {
+            const ans = document.getElementById('faq-ans-' + idx);
+            const icon = document.getElementById('faq-icon-' + idx);
+            if (!ans || !icon) return;
+            const isHidden = ans.classList.contains('hidden');
+            ans.classList.toggle('hidden', !isHidden);
+            icon.textContent = isHidden ? '−' : '+';
+        }
+
+        window.addEventListener('resize', updateReviewCarouselPosition);
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderHeroCarousel();
+            startHeroAutoSlide();
+            renderQualityCardImages();
+            renderReviewsCarousel();
+            startReviewAutoSlide();
+            renderFaqs();
+            selectBundleTier(3);
+
+            const savedKey = getSavedWeb3FormsKey();
+            const keyInput = document.getElementById('web3forms-key-input');
+            if (keyInput && savedKey) {
+                keyInput.value = savedKey;
+            }
+
+            const tg = getSavedTelegramConfig();
+            const tInput = document.getElementById('tg-bot-token-input');
+            const cInput = document.getElementById('tg-chat-id-input');
+            if (tInput && tg.token) tInput.value = tg.token;
+            if (cInput && tg.chatId) cInput.value = tg.chatId;
+
+            // Mặc định ẩn hoàn toàn bảng cấu hình chủ shop khỏi khách hàng (trừ khi URL có ?admin=1)
+            const urlParams = new URLSearchParams(window.location.search);
+            toggleCustomerPreviewMode(urlParams.get('admin') !== '1');
+        });
+    </script>
+</body>
+</html>
